@@ -1,0 +1,1211 @@
+/* join */
+
+* {
+    box-sizing: border-box;
+}
+
+.join {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.join__container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.join__container>h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 100px 0 51px;
+}
+
+.join__container__terms {
+    width: 100%;
+}
+
+.container__terms__top {
+    background-color: #F0F0F0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    padding-left: 25px;
+}
+
+.container__terms__bottom {
+    border: 1px solid #BEBEBE;
+    border-radius: 2px;
+    border-top: none;
+}
+
+.terms__bottom__box {
+    padding: 25px;
+    height: 320px;
+    overflow: auto;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.terms__bottom__box>pre {
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+.container__terms__ch {
+    margin: 25px 0 50px;
+}
+
+.container__terms__ch>label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container__terms__ch input {
+    width: 20px;
+    height: 20px;
+}
+
+.container__terms__ch span {
+    margin-bottom: 3px;
+    margin-left: 5px;
+}
+
+.join__bottom {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0C1E46;
+}
+
+.join__bottom>h1 {
+    padding-bottom: 31px;
+}
+
+.join__bottom__form {
+    width: 100%;
+    padding: 50px 0 134px;
+    border-top: 1px solid #BEBEBE;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom__form__information {
+    width: 826px;
+    box-sizing: border-box;
+}
+
+.bottom__form__information .form__information__input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__information__input>span {
+    font-size: 22px;
+    color: #000000;
+    font-weight: normal;
+}
+
+.form__information__input>input {
+    width: 600px;
+    height: 50px;
+    border: 1px solid #F0F0F0;
+    padding: 0 15px;
+}
+
+.form__information__id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+    margin: 35px 0;
+}
+
+.form__information__id>span {
+    font-size: 22px;
+    color: #000000;
+}
+
+.form__information__id input {
+    width: 380px;
+    height: 50px;
+    border: 1px solid #F0F0F0;
+    padding: 0 15px;
+}
+
+.form__information__id button {
+    width: 200px;
+    height: 50px;
+    background-color: #0C1E46;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.bottom__form__information>p {
+    color: #8E8E8E;
+    font-size: 16px;
+    margin: 10px 0 35px 136px;
+    font-weight: 500;
+}
+
+.form__information__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+    margin: 35px 0;
+}
+
+.form__information__area span {
+    font-size: 22px;
+    color: #000000;
+}
+
+.form__information__area select {
+    height: 50px;
+    font-size: 20px;
+    width: 290px;
+    border: 1px solid #F0F0F0;
+    padding: 0 25px;
+}
+
+.form__information__area select:last-child {
+    margin-left: 20px;
+}
+
+.form__information__birth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+}
+
+.form__information__birth span {
+    font-size: 22px;
+    color: #000000;
+}
+
+.information__birth__box {
+    display: flex;
+    align-items: center;
+}
+
+.information__birth__box select {
+    width: 153px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 20px;
+    border: 1px solid #F0F0F0;
+}
+
+.birth__box__work select {
+    margin-right: 12px;
+}
+
+.birth__box__year span {
+    margin-left: 14px;
+    margin-right: 20px;
+}
+
+.birth__box__month span {
+    margin-left: 14px;
+    margin-right: 20px;
+}
+
+.form__information__gender {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 22px;
+    color: #000000;
+    margin: 45px 0;
+}
+
+.information__gender__box {
+    display: flex;
+    align-items: center;
+    margin-left: 186px;
+    font-size: 20px;
+}
+
+.information__gender__box label {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.information__gender__box input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.form__information__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 22px;
+    color: #000000;
+}
+
+.information__body__box {
+    display: flex;
+    align-items: center;
+}
+
+.information__body__box input {
+    width: 250px;
+    height: 50px;
+    border: 1px solid #F0F0F0;
+    padding: 0 15px;
+}
+
+.body__box__cm span {
+    margin: 0 14px;
+}
+
+.body__box__kg span {
+    margin-left: 14px;
+}
+
+.information__body__box>div {
+    display: flex;
+    align-items: center;
+}
+
+.form__information__contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 22px;
+    color: #000000;
+    margin: 35px 0;
+}
+
+.information__contact__box select {
+    width: 165px;
+    height: 50px;
+    border: 1px solid #F0F0F0;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.information__contact__box input {
+    width: 165px;
+    height: 50px;
+    border: 1px solid #F0F0F0;
+    padding: 0 15px;
+}
+
+.information__contact__box span {
+    margin: 0px 21px 0 22px;
+    font-size: 25px !important;
+    font-weight: 500;
+}
+
+.form__information__email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.form__information__email input {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #F0F0F0;
+    padding: 0 15px;
+}
+
+.information__email__box {
+    display: flex;
+    align-items: center;
+}
+
+.information__email__box>span {
+    margin: 0 18px;
+}
+
+.information__email__box select {
+    width: 170px;
+    height: 50px;
+    border: 1px solid #F0F0F0;
+    font-size: 20px;
+    padding: 0 20px;
+    margin-left: 11px;
+}
+
+.join__btn {
+    width: 100%;
+    padding-top: 50px;
+    border-top: 1px solid #BEBEBE;
+}
+
+.join__btn__one {
+    width: 300px;
+    height: 60px;
+    border: none;
+    border-radius: 2px;
+    background-color: #0C1E46;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.join__btn>button {
+    width: 300px;
+    height: 60px;
+    border: 1px solid #0C1E46;
+    border-radius: 2px;
+    color: #0C1E46;
+    background-color: #ffffff;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.information__area__list,
+.information__birth__box,
+.information__contact__box {
+    font-size: 0;
+}
+
+
+/*navTwo*/
+
+.navTwo {
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.navTwo__container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navTwo__container__home {
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navTwo__container>*:not(:last-child) {
+    border-left: 1px solid #BEBEBE;
+}
+
+.navTwo__container>*:not(:first-child) {
+    border-right: 1px solid #BEBEBE;
+}
+
+.navTwo__container__recruitment {
+    width: 300px;
+    height: 100%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 31px;
+}
+
+.navTwo__container__list {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.navTwo__li {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 351px;
+    height: 140px;
+    position: absolute;
+    top: 89px;
+    left: -1px;
+    border: 1px solid #BEBEBE;
+    opacity: 0;
+    z-index: -1;
+}
+
+.navTwo__container__list:hover .navTwo__li {
+    transition-duration: .5s;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.li__box__column {
+    width: 100%;
+    height: 70px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 0.2s;
+    font-size: 18px;
+}
+
+.li__box__column a {
+    color: #A1A1A1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navTwo__li__box .li__box__column:hover {
+    background-color: #F0F0F0;
+    transition: 0.2s;
+}
+
+
+/* member_edit.css */
+
+.member__edit__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C1E46;
+    font-size: 30px;
+    font-weight: 500;
+    height: 90px;
+    color: #ffffff;
+    margin-top: 56px;
+}
+
+.bottom__form__information input {
+    font-size: 20px;
+    color: #000000;
+}
+
+.information__id__pbox {
+    width: 600px;
+    text-align: start;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+
+/* 반응형 425 */
+
+@media ( max-width: 425px) {
+    .information__id__pbox {
+        font-size: 12px;
+        width: 100%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #F0F0F0;
+    }
+    .bottom__form__information input {
+        font-size: 12px;
+        color: #000000;
+    }
+    .research {
+        padding: 0 20px;
+    }
+    .research .research_wrapper {
+        height: 35px;
+    }
+    .research .research_wrapper div {
+        height: 35px;
+        line-height: 35px;
+    }
+    .research .research_wrapper div span {
+        font-size: 12px;
+    }
+    .healthy_card_wrapper {
+        max-width: 425px;
+        padding: 0;
+        margin: 0;
+    }
+    .healthy_card_wrapper .healthy_ul {
+        width: 385px;
+        display: block;
+        margin: 0 auto;
+    }
+    .healthy_card_wrapper .healthy_ul li {}
+    /* 네비바2 */
+    .navTwo__container {
+        width: 100%;
+    }
+    .navTwo__container__home {
+        display: none;
+    }
+    .navTwo {
+        height: 35px;
+    }
+    .navTwo__container__recruitment {
+        font-size: 11px;
+    }
+    .navTwo__container__list {
+        font-size: 11px;
+    }
+    .navTwo__container__list img {
+        width: 8px;
+        height: 5px;
+    }
+    .navTwo__li {
+        top: 35px;
+        height: 60px;
+        width: 100%;
+        border-right: none;
+    }
+    .li__box__column {
+        height: 30px;
+        font-size: 10px;
+    }
+    .navTwo__container>*:not(:first-child),
+    .navTwo__container>*:not(:last-child) {
+        border: none;
+    }
+    .navTwo__container .navTwo__container__recruitment {
+        border-right: 1px solid #BEBEBE;
+    }
+}
+
+
+/* 반응형 360 */
+
+@media ( max-width: 360px) {}
+
+
+/* join 반응형 */
+
+@media ( max-width: 425px) {
+    .join {
+        height: 100%;
+    }
+    .join__bottom>h1 {
+        font-size: 17px;
+    }
+    .join__container {
+        width: 375px;
+    }
+    .bottom__form__information {
+        width: 100%;
+    }
+    .bottom__form__information>* {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form__information__input>span {
+        width: 100%;
+        text-align: start;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .form__information__input>input {
+        width: 100%;
+        height: 35px;
+    }
+    .container__terms__top {
+        font-size: 12px;
+        height: 40px;
+    }
+    .terms__bottom__box {
+        font-size: 10px;
+        height: 96px;
+        padding: 10px;
+    }
+    .join__container>h1 {
+        font-size: 17px;
+    }
+    .container__terms__ch input {
+        width: 15px;
+        height: 15px;
+    }
+    .container__terms__ch span {
+        font-size: 12px;
+    }
+    .form__information__id {
+        margin: 15px 0;
+    }
+    .form__information__id span {
+        width: 100%;
+        text-align: start;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .form__information__id input {
+        width: 265px;
+        height: 35px;
+    }
+    .form__information__id button {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .bottom__form__information>p {
+        font-size: 11px;
+        margin: 5px 0 15px -10px;
+    }
+    .form__information__area span {
+        width: 100%;
+        text-align: start;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .form__information__area {
+        margin: 15px 0;
+    }
+    .form__information__area select {
+        width: 177px;
+        height: 35px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+    .form__information__birth span {
+        width: 100%;
+        text-align: start;
+        font-size: 14px;
+        margin: 0;
+    }
+    .information__birth__box select {
+        width: 96px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .form__information__gender {
+        margin: 15px 0;
+    }
+    .form__information__gender>span {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .information__gender__box input {
+        width: 15px;
+        height: 15px;
+    }
+    .information__gender__box {
+        width: 100%;
+        font-size: 12px;
+        margin-left: 0px;
+    }
+    .information__gender__box label {
+        margin-right: 20px;
+    }
+    .form__information__body>span {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .information__body__box input {
+        width: 150px;
+        height: 35px;
+    }
+    .body__box__cm span {
+        font-size: 12px;
+    }
+    .body__box__kg span {
+        font-size: 12px;
+    }
+    .form__information__contact>span {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .information__contact__box select {
+        width: 102px;
+        font-size: 12px;
+        height: 35px;
+        padding: 0 15px;
+    }
+    .information__contact__box input {
+        width: 99px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .information__contact__box span {
+        margin: 0 10px;
+    }
+    .form__information__email>span {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .information__email__box input {
+        width: 106px;
+        height: 35px;
+        padding: 0 15px;
+    }
+    .information__email__box select {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+        padding: 0 15px;
+    }
+    .information__email__box>span {
+        font-size: 12px;
+    }
+    .join__btn__one {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .join__btn>button {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .form__information__contact {
+        margin: 15px 0;
+    }
+    .birth__box__work select {
+        margin-right: 6px;
+    }
+    .birth__box__year span {
+        margin-left: 7px;
+        margin-right: 10px;
+    }
+    .birth__box__month span {
+        margin-left: 11px;
+        margin-right: 13px;
+    }
+    .information__birth__box {
+        margin-top: 10px;
+    }
+    .information__contact__box input {
+        width: 107px;
+    }
+    .information__email__box>span {
+        margin: 0 10px;
+    }
+    .information__email__box input {
+        width: 113px;
+    }
+    .member__edit__title {
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+@media ( max-width: 360px) {
+    .join__bottom>h1 {
+        font-size: 17px;
+    }
+    .join__container {
+        width: 320px;
+    }
+    .bottom__form__information {
+        width: 100%;
+    }
+    .bottom__form__information>* {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form__information__input>span {
+        width: 100%;
+        text-align: start;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .form__information__input>input {
+        width: 100%;
+        height: 35px;
+    }
+    .container__terms__top {
+        font-size: 12px;
+        height: 40px;
+    }
+    .terms__bottom__box {
+        font-size: 10px;
+        height: 96px;
+        padding: 10px;
+    }
+    .join__container>h1 {
+        font-size: 17px;
+    }
+    .container__terms__ch input {
+        width: 15px;
+        height: 15px;
+    }
+    .container__terms__ch span {
+        font-size: 12px;
+    }
+    .form__information__id {
+        margin: 15px 0;
+    }
+    .form__information__id span {
+        width: 100%;
+        text-align: start;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .form__information__id input {
+        width: 210px;
+        height: 35px;
+    }
+    .form__information__id button {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .bottom__form__information>p {
+        font-size: 11px;
+        margin: 5px 0 15px 0;
+        text-align: start;
+        line-height: 15px;
+    }
+    .form__information__area span {
+        width: 100%;
+        text-align: start;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .form__information__area {
+        margin: 15px 0;
+    }
+    .form__information__area select {
+        width: 149px;
+        height: 35px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+    .form__information__birth>span {
+        width: 100%;
+        text-align: start;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .information__birth__box select {
+        width: 77px;
+        height: 35px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .form__information__gender {
+        margin: 15px 0;
+    }
+    .form__information__gender>span {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .information__gender__box input {
+        width: 15px;
+        height: 15px;
+    }
+    .information__gender__box {
+        width: 100%;
+        font-size: 12px;
+        margin-left: 0px;
+    }
+    .information__gender__box label {
+        margin-right: 20px;
+    }
+    .form__information__body>span {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .information__body__box input {
+        width: 125px;
+        height: 35px;
+    }
+    .body__box__cm span {
+        font-size: 12px;
+    }
+    .body__box__kg span {
+        font-size: 12px;
+    }
+    .form__information__contact>span {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .information__contact__box select {
+        width: 84px;
+        font-size: 12px;
+        height: 35px;
+        padding: 0 15px;
+    }
+    .information__contact__box input {
+        width: 89px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .information__contact__box span {
+        margin: 0 10px;
+    }
+    .form__information__email>span {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .information__email__box input {
+        width: 92px;
+        height: 35px;
+        padding: 0 15px;
+    }
+    .information__email__box select {
+        width: 92px;
+        height: 35px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .information__email__box>span {
+        font-size: 12px;
+    }
+    .join__btn__one {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .join__btn>button {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .form__information__contact {
+        margin: 15px 0;
+    }
+    .member__edit__title {
+        height: 45px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media ( max-width: 320px) {
+    .join__bottom>h1 {
+        font-size: 15px;
+    }
+    .join__container {
+        width: 280px;
+    }
+    .bottom__form__information {
+        width: 100%;
+    }
+    .bottom__form__information>* {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form__information__input>span {
+        width: 100%;
+        text-align: start;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .form__information__input>input {
+        width: 100%;
+        height: 35px;
+    }
+    .container__terms__top {
+        font-size: 12px;
+        height: 40px;
+    }
+    .terms__bottom__box {
+        font-size: 10px;
+        height: 96px;
+        padding: 10px;
+    }
+    .join__container>h1 {
+        font-size: 15px;
+    }
+    .container__terms__ch input {
+        width: 15px;
+        height: 15px;
+    }
+    .container__terms__ch span {
+        font-size: 10px;
+    }
+    .form__information__id {
+        margin: 15px 0;
+    }
+    .form__information__id span {
+        width: 100%;
+        text-align: start;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .form__information__id input {
+        width: 170px;
+        height: 35px;
+    }
+    .form__information__id button {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .bottom__form__information>p {
+        font-size: 10px;
+        margin: 5px 0 15px 0;
+        text-align: start;
+        line-height: 15px;
+    }
+    .form__information__area span {
+        width: 100%;
+        text-align: start;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .form__information__area {
+        margin: 15px 0;
+    }
+    .form__information__area select {
+        width: 129px;
+        height: 35px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+    .form__information__birth>span {
+        width: 100%;
+        text-align: start;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .information__birth__box select {
+        width: 70px;
+        height: 35px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .form__information__gender {
+        margin: 15px 0;
+    }
+    .form__information__gender>span {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .information__gender__box input {
+        width: 15px;
+        height: 15px;
+    }
+    .information__gender__box {
+        width: 100%;
+        font-size: 12px;
+        margin-left: 0px;
+    }
+    .information__gender__box label {
+        margin-right: 20px;
+    }
+    .form__information__body>span {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .information__body__box input {
+        width: 104px;
+        height: 35px;
+    }
+    .body__box__cm span {
+        font-size: 12px;
+    }
+    .body__box__kg span {
+        font-size: 12px;
+    }
+    .form__information__contact>span {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .information__contact__box select {
+        width: 70px;
+        font-size: 12px;
+        height: 35px;
+        padding: 0 10px;
+    }
+    .information__contact__box input {
+        width: 76px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .information__contact__box span {
+        margin: 0 10px;
+    }
+    .form__information__email>span {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .information__email__box input {
+        width: 73px;
+        height: 35px;
+        padding: 0 10px;
+    }
+    .information__email__box select {
+        width: 92px;
+        height: 35px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .information__email__box>span {
+        font-size: 12px;
+    }
+    .join__btn__one {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .join__btn>button {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .form__information__contact {
+        margin: 15px 0;
+    }
+    .information__birth__box>* {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .information__birth__box {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .information__birth__box select {
+        margin-right: 5px;
+    }
+    .banner {
+        margin-bottom: 25px;
+    }
+}

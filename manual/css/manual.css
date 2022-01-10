@@ -1,0 +1,363 @@
+/*  */
+
+* {
+    font-family: 'Noto Sans KR';
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*navTwo*/
+
+.navTwo {
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.navTwo__container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navTwo__container__home {
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navTwo__container>*:not(:last-child) {
+    border-left: 1px solid #BEBEBE;
+}
+
+.navTwo__container>*:not(:first-child) {
+    border-right: 1px solid #BEBEBE;
+}
+
+.navTwo__container__recruitment {
+    width: 300px;
+    height: 100%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 31px;
+}
+
+.navTwo__container__list {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.navTwo__li {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 351px;
+    height: 212px;
+    position: absolute;
+    top: 90px;
+    left: -1px;
+    border: 1px solid #BEBEBE;
+    opacity: 0;
+    z-index: -1;
+}
+
+.navTwo__container__list:hover .navTwo__li {
+    transition-duration: .5s;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.li__box__column {
+    width: 100%;
+    height: 70px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 0.2s;
+    font-size: 18px;
+    background: #fff;
+}
+
+.li__box__column a {
+    color: #A1A1A1;
+}
+
+.navTwo__li__box .li__box__column:hover {
+    background-color: #F0F0F0;
+    transition: 0.2s;
+}
+
+.manual_wrapper {
+    margin-bottom: 100px;
+}
+
+
+/* vitialit title */
+
+.manual_title {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.manual_title span {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: #0C1E46;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 90px;
+}
+
+
+/* clinical definition */
+
+.manual_step_wrapper {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+.step_title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.step_title img {
+    margin-right: 15px;
+    vertical-align: baseline;
+}
+
+.step_title span {
+    font-size: 25px;
+}
+
+
+/* step wrapper */
+
+.step_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.step_wrapper .step {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+    border: 1px solid #BEBEBE;
+}
+
+.step_wrapper .step .step_img {
+    width: 200px;
+    height: 160px;
+    position: relative;
+}
+
+.step_wrapper .step .step_img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.step_wrapper .step .title_wrapper {
+    padding: 0 35px;
+    width: 288px;
+    background: #F2F4FA;
+}
+
+.step_wrapper .step:nth-child(1) .title_wrapper,
+.step_wrapper .step:nth-child(7) .title_wrapper,
+.step_wrapper .step:nth-child(8) .title_wrapper {
+    background: #F7F7F7;
+}
+
+.step_wrapper .step .title_wrapper>div {
+    margin-top: 20px;
+}
+
+.step_wrapper .step .title_wrapper>div span.num {
+    color: #4466B2;
+    font-size: 21px;
+    margin-right: 15px;
+}
+
+.step_wrapper .step .title_wrapper>div span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.step_wrapper .step .title_wrapper>p {
+    font-size: 16px;
+    margin-top: 12px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.step_wrapper .step .title_wrapper>p span {
+    display: block;
+    font-size: 14px;
+}
+
+
+/* 반응형 425 */
+
+@media ( max-width: 425px) {
+    /* clinical */
+    .manual_title {
+        max-width: 89%;
+        margin: 20px auto;
+    }
+    .manual_title span {
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+    /* 네비바2 */
+    .navTwo__container {
+        width: 100%;
+    }
+    .navTwo__container__home {
+        display: none;
+    }
+    .navTwo {
+        height: 35px;
+    }
+    .navTwo__container__recruitment {
+        font-size: 11px;
+    }
+    .navTwo__container__list {
+        font-size: 11px;
+    }
+    .navTwo__container__list img {
+        width: 8px;
+        height: 5px;
+    }
+    .navTwo__li {
+        top: 35px;
+        height: 92px;
+        width: 100%;
+        border-right: none;
+    }
+    .li__box__column {
+        height: 30px;
+        font-size: 10px;
+    }
+    .navTwo__container>*:not(:first-child),
+    .navTwo__container>*:not(:last-child) {
+        border: none;
+    }
+    .navTwo__container .navTwo__container__recruitment {
+        border-right: 1px solid #BEBEBE;
+    }
+    .manual_wrapper {
+        margin-bottom: 40px;
+    }
+    /* step */
+    .manual_step_wrapper {
+        max-width: 89%;
+        margin-bottom: 40px;
+    }
+    .step_title span {
+        font-size: 15px;
+    }
+    .step_title {
+        margin-bottom: 0px;
+    }
+    .step_wrapper .step {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .step_wrapper .step .step_img {
+        width: 100px;
+        height: 100%;
+    }
+    .step:nth-child(1) .step_img img {
+        content: url('../../common/images/mo_sign_in.png');
+    }
+    .step:nth-child(2) .step_img img {
+        content: url('../../common/images/mo_analytic.png');
+    }
+    .step:nth-child(3) .step_img img {
+        content: url('../../common/images/mo_task.png');
+    }
+    .step:nth-child(4) .step_img img {
+        content: url('../../common/images/mo_stethoscope.png');
+    }
+    .step:nth-child(5) .step_img img {
+        content: url('../../common/images/mo_call.png');
+    }
+    .step:nth-child(6) .step_img img {
+        content: url('../../common/images/mo_vaccine.png');
+    }
+    .step:nth-child(7) .step_img img {
+        content: url('../../common/images/mo_banknotes.png');
+    }
+    .step:nth-child(8) .step_img img {
+        content: url('../../common/images/mo_healthcare.png');
+    }
+    .step_wrapper .step .title_wrapper {
+        width: 227px;
+        padding: 15px 18px;
+    }
+    .step_wrapper .step .title_wrapper>div {
+        margin-top: 0px;
+    }
+    .step_wrapper .step .title_wrapper>div span {
+        font-size: 12px;
+    }
+    .step_wrapper .step .title_wrapper>div span.num {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .step_wrapper .step .title_wrapper>p {
+        font-size: 11px;
+        line-height: 17px;
+        margin-top: 8px;
+    }
+    .step_wrapper .step .title_wrapper>p span {
+        font-size: 10px;
+    }
+}
+
+
+/* 반응형 360 */
+
+@media ( max-width: 360px) {
+    .manual_title {
+        max-width: 320px;
+    }
+    /* clinical definition */
+    .manual_step_wrapper {
+        max-width: 320px;
+    }
+    .step_wrapper .step .title_wrapper {
+        width: 162px;
+    }
+}

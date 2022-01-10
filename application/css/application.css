@@ -1,0 +1,871 @@
+/*  */
+a {
+    text-decoration: none;
+}
+
+/*navTwo*/
+
+.navTwo{
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.navTwo__container{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navTwo__container__home{
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navTwo__container > *:not(:last-child){
+    border-left: 1px solid #BEBEBE;
+}
+
+.navTwo__container > *:not(:first-child){
+    border-right: 1px solid #BEBEBE;
+}
+
+.navTwo__container__recruitment{
+    width: 300px;
+    height: 100%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 31px;
+}
+
+.navTwo__container__list{
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.navTwo__li{
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 351px;
+    height: 142px;
+    position: absolute;
+    top: 90px;
+    left: -1px;
+    border: 1px solid #BEBEBE;
+    opacity: 0;
+    z-index: -1;
+}
+
+.navTwo__container__list:hover .navTwo__li{
+    transition-duration: .5s;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.li__box__column{
+    width: 100%;
+    height: 70px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 0.2s;
+    font-size: 18px;
+    background: #fff;
+}
+
+.li__box__column a{
+    color: #A1A1A1;
+}
+
+.navTwo__li__box .li__box__column:hover{
+    background-color: #F0F0F0;
+    transition: 0.2s;
+
+}
+
+.volunteer_left_tab {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.volunteer_right_tab {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: none;
+}
+
+
+/* research */
+.research {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.research .research_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #BEBEBE
+
+}
+
+.research .research_wrapper div {
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #AAAAAA;
+}
+
+.research .research_wrapper div.selected {
+    background: #0C1E46;
+    color: #fff;
+}
+
+.research .research_wrapper div:hover:not(div.selected) {
+    cursor: pointer;
+}
+
+.research .research_wrapper div.selected
+.research .research_wrapper div span {
+    color: #AAAAAA;
+    font-size: 18px;
+}
+
+
+
+/* healthy list */
+.my_application_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.my_application_wrapper .healthy_ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.my_application_wrapper .healthy_ul li {
+    border: 1px solid #4466B2;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.my_application_wrapper .healthy_ul li.close {
+    border: 1px solid #BEBEBE;
+
+}
+
+.my_application_wrapper .healthy_ul li.close span,
+.my_application_wrapper .healthy_ul li.close .due_date span,
+.my_application_wrapper .healthy_ul li.close .healthy_recruit{
+    color: #BEBEBE;
+}
+
+.my_application_wrapper .healthy_ul li.close .healthy_recruit .recruit,
+.my_application_wrapper .healthy_ul li.close .healthy_category { 
+    color: #fff;
+}
+
+.my_application_wrapper .healthy_ul li.close .recruit_img {
+    display: none;
+}
+
+.my_application_wrapper .healthy_ul li.close .healthy_category,
+.healthy_ul li.close .healthy_recruit {
+    background: #BEBEBE;
+}
+
+.healthy_ul li.close .date_wrapper .application_date::before {
+    content: url('../../common/imapplication_dates/people_icon_close.png');
+}
+
+
+.my_application_wrapper .healthy_ul li.almost {
+    border: 1px solid #C82020;
+
+}
+
+.healthy_ul li.almost .healthy_recruit {
+    background: #C82020;
+}
+
+
+.list_top {
+    padding: 20px 20px 0 20px ;
+}
+
+.healthy_ul li .healthy_img {
+    margin-bottom: 20px;
+}
+
+.healthy_ul li .healthy_title_wrapper {
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.healthy_ul li .healthy_title_wrapper .healthy_category {
+    display: inline-block;
+    color: #FFFFFF;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background: #4466B2;
+    font-size: 13px;
+    margin-right: 7px;
+}
+
+.healthy_ul li .healthy_title_wrapper .healthy_title {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+    width: 279px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.healthy_ul li .healthy_hospital {
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.healthy_ul li .healthy_hospital:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    border-bottom: 1px dashed #DEDEDE;
+    width: 380px;
+    left: -20px;
+}
+
+.healthy_ul li .healthy_hospital span {
+    color: #8E8E8E;
+    font-size: 14px;
+}
+
+.healthy_ul li .date_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.healthy_ul li .date_wrapper .date > span {
+    display: block;
+}
+
+.healthy_ul li .date_wrapper .date {
+    color: #000;
+    font-size: 13px;
+}
+
+.healthy_ul li .date_wrapper .application_date {
+    margin-top: 7px;
+    position: relative;
+    font-size: 13px;
+    font-weight: 500;
+    color: #4466B2;
+    padding-left: 25px;
+}
+
+.healthy_ul li .date_wrapper .application_date::before {
+    position: absolute;
+    content: url('../../common/imapplication_dates/people_icon.png');
+    text-align: center;
+    left: 0;
+    top: -1px;
+}
+
+.healthy_ul li .date_wrapper .due_date_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.healthy_ul li .date_wrapper .due_date_wrapper span {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4466B2;
+    text-align: center;
+}
+
+.healthy_ul li .date_wrapper .due_date_wrapper span:nth-child(1) {
+    margin-bottom: 5px;
+}
+
+.healthy_ul li .healthy_recruit {
+    background: #4466B2;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.healthy_ul li .healthy_recruit:hover .recruit_img img:nth-child(1) {
+    opacity: 1;
+}
+
+.healthy_ul li .healthy_recruit .recruit {
+    color: #fff;
+    font-size: 20px;
+}
+
+.healthy_ul li .healthy_recruit .recruit_img img {
+    position: absolute;
+    right: 35px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.healthy_ul li .healthy_recruit .recruit_img img:nth-child(1) {
+    right: 45px;
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+
+
+/* total recruit */
+.total_recruit {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.total_recruit span {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: #0C1E46;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 90px;
+}
+
+
+
+/* total recruit list */
+.application_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.application_wrapper .application_ul li {
+    border: 1px solid #4466B2;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 1px 6px #0000001F;
+
+}
+
+/* 마감 */
+.application_wrapper .application_ul li.close {
+    border: 1px solid #BEBEBE;
+}
+
+.application_ul li.close .recruit_title_wrapper .recruit_category {
+    background: #BEBEBE;
+}
+
+.application_wrapper .application_ul li.close .recruit_title_wrapper .recruit_title {
+    color: #8E8E8E;
+}
+
+.application_wrapper .application_ul li.close .date span {
+    color: #BEBEBE;
+}
+
+.application_ul li.close .date .application_date::before {
+    content: url('../../common/imapplication_dates/people_icon_close.png');
+}
+/*  */
+
+
+
+/* 마감임박 */
+.application_wrapper .application_ul li.almost {
+    border: 1px solid #C82020;
+}
+
+.application_ul li.almost .application_list_wrapper .recruit_state .state_box {
+    background: #C82020;
+}
+
+.state_box .recruit_arrow img:nth-child(1) {
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+/*  */
+
+
+
+.application_list_wrapper {
+    display: flex;
+    justify-content: left;
+}
+
+.application_list_wrapper .recruit_logo {
+    width: 340px;
+    height: 140px;
+    border: 1px solid #70707066;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.application_list_wrapper .recruit_logo img {
+
+}
+
+.application_ul li .recruit_title_wrapper {
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.application_ul li .recruit_title_wrapper .recruit_category {
+    display: inline-block;
+    color: #FFFFFF;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background: #4466B2;
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+.application_ul li .recruit_title_wrapper .recruit_title {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.application_ul li .healthy_hospital {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.application_ul li .healthy_hospital span {
+    color: #8E8E8E;
+    font-size: 14px;
+}
+
+.application_ul li .date{
+    color: #000;
+    font-size: 13px;
+}
+
+.application_ul li .date span { 
+    display: block;
+    margin-top: 10px;
+}
+
+.application_ul li .date .application_date {
+    margin-top: 15px;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    color: #4466B2;
+    padding-left: 25px;
+}
+
+.application_ul li .date .application_date::before {
+    position: absolute;
+    content: url('../../common/images/application_check.png');
+    text-align: center;
+    left: 0;
+    top: -1px;
+}
+
+/* application btn */
+.application_button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 20px;
+}
+
+.application_button div {
+    width: 90px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.application_button div:last-child {
+    margin-bottom: 0px;
+}
+
+.application_finish_button div button,
+.application_button div button {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.application_button .edit button{
+    background: #fff;
+    border: 1px solid #707070;
+    color: #707070;
+}
+
+.application_button .date_edit button {
+    background: #012C8B;
+    border: 1px solid #012C8B;
+    color: #fff;
+}
+
+.application_button .cancel button {
+    background: #C82020;
+    border: 1px solid #C82020;
+    color: #fff;
+}
+
+.application_finish_button {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    /* transform: translateY(-50%); */
+    margin-right: 20px;
+}
+
+.application_finish_button .finish {
+    width: 90px;
+    height: 40px;
+}
+
+.application_finish_button .finish button{
+    background: #8E8E8E;
+    border: 1px solid #8E8E8E;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* 반응형 425 */
+@media ( max-width: 425px )  {
+     /* 네비바2 */
+
+     .navTwo__container{
+        width: 100%;
+    }
+
+    .navTwo__container__home{
+        display: none;
+    }
+
+    .navTwo{
+        height: 35px;
+    }
+
+    .navTwo__container__recruitment{
+        font-size: 11px;
+    }
+
+    .navTwo__container__list{
+        font-size: 11px;
+    }
+
+    .navTwo__container__list img{
+        width: 8px;
+        height: 5px;
+    }
+
+    .navTwo__li{
+        top: 35px;
+        height: 62px;
+        width: 100%;
+        border-right: none;
+    }
+
+    .li__box__column{
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .navTwo__container > *:not(:first-child),.navTwo__container > *:not(:last-child){
+        border: none;
+    }
+
+    .navTwo__container .navTwo__container__recruitment{
+        border-right: 1px solid #BEBEBE;
+    }
+
+
+
+
+    .research {
+        padding: 0 20px;
+        margin: 20px auto;
+    }
+    
+    .research .research_wrapper {
+        height: 35px;
+    }
+
+
+    .research .research_wrapper div {
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .research .research_wrapper div span {
+        font-size: 12px;
+    }
+
+    .my_application_wrapper {
+        max-width: 385px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .my_application_wrapper .healthy_ul {
+        max-width: 385px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .my_application_wrapper .healthy_ul li {
+        margin-bottom: 10px;
+    }
+
+    .healthy_ul li .healthy_hospital {
+        padding-bottom: 30px;
+    }
+
+    .my_application_wrapper .healthy_ul li:last-child {
+        margin-bottom: 20px;
+
+    }
+
+    .healthy_ul li .healthy_title_wrapper .healthy_title {
+        display: inline-block;
+        font-size: 15px;
+        width: 282px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .healthy_ul li .healthy_title_wrapper .healthy_category {
+        font-size: 11px;
+        height: 21px;
+        line-height: 21px;
+    }
+
+    /* total recruit */
+    .total_recruit {
+        max-width: 385px;
+        margin: 20px auto;
+    }
+
+    .total_recruit span {
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+
+
+
+    /* application_wrapper */
+    .application_wrapper {
+        max-width: 385px;
+        margin: 20px auto;
+
+    }
+
+    .application_list_wrapper .recruit_logo {
+        display: none;
+    }
+
+    .application_wrapper .application_ul li {
+        padding: 12px 10px;
+        margin-bottom: 10px;
+    }
+
+    .application_ul li .recruit_title_wrapper .recruit_title {
+        font-size: 14px;
+    }
+
+    .application_ul li .healthy_hospital span {
+        font-size: 11px;
+    }
+
+    .application_ul li .date .application_date {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+    .application_ul li .date .application_date span {
+        display: block;
+    }
+
+    .application_list_wrapper {
+        display: block;
+    }
+
+    .application_finish_button,
+    .application_button {
+        width: 100%;
+        position: initial;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: initial;
+        margin-top: 15px;
+    }
+
+    .application_finish_button .finish,
+    .application_button div {
+        margin-bottom: 0;
+        height: 35px;
+    }
+
+    .application_finish_button div button, 
+    .application_button div button {
+        font-size: 12px;
+    }
+
+    .application_finish_button {
+        justify-content: right;
+    }
+}
+
+
+
+/* 반응형 360 */
+@media ( max-width: 360px )  {
+
+    .research {
+        margin-top: 45px;
+    }
+
+    .my_application_wrapper {
+        max-width: 320px;
+    }
+
+    .my_application_wrapper .healthy_ul {
+        max-width: 320px;
+    }
+
+    .swiper-container .swiper-wrapper .swiper-slide img {
+        height: 200px;
+    }
+
+    .healthy_ul li .healthy_title_wrapper .healthy_title {
+        display: inline-block;
+        font-size: 15px;
+        width: 217px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .healthy_img img{
+        width: 100%;
+    }
+
+    .healthy_ul li .healthy_hospital span {
+        font-size: 12px;
+    }
+
+    .healthy_ul li .healthy_hospital {
+        padding-bottom: 30px;
+    }
+
+    .healthy_ul li .healthy_hospital:after {
+        width: 320px;
+    }
+
+    .healthy_ul li .date_wrapper .date {
+        font-size: 12px;
+    }
+
+    .healthy_ul li .date_wrapper .due_date_wrapper span {
+        font-size: 13px;
+    }
+
+    .healthy_ul li .healthy_recruit .recruit {
+        font-size: 16px;
+    }
+    
+    .application_wrapper {
+        margin-bottom: 0px;
+    }
+
+    .total_recruit {
+        max-width: 320px;
+    }
+
+    .application_wrapper .application_ul li {
+        margin-bottom: 10px;
+    }
+
+    .application_ul li .recruit_title_wrapper .recruit_title {
+        display: flex;
+        align-items: center;
+        width: 217px;
+        height: 25px;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .application_ul li .healthy_hospital span,
+    .application_ul li .date,
+    .application_ul li .date .application_date {
+        font-size: 11px;
+    }
+
+    .application_ul li .healthy_hospital {
+        margin-bottom: 20px
+    }
+
+}

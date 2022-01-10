@@ -1,0 +1,363 @@
+/*  */
+
+* {
+    font-family: 'Noto Sans KR';
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*navTwo*/
+
+.navTwo {
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.navTwo__container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navTwo__container__home {
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navTwo__container>*:not(:last-child) {
+    border-left: 1px solid #BEBEBE;
+}
+
+.navTwo__container>*:not(:first-child) {
+    border-right: 1px solid #BEBEBE;
+}
+
+.navTwo__container__recruitment {
+    width: 300px;
+    height: 100%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 31px;
+}
+
+.navTwo__container__list {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.navTwo__li {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 351px;
+    height: 212px;
+    position: absolute;
+    top: 90px;
+    left: -1px;
+    border: 1px solid #BEBEBE;
+    opacity: 0;
+    z-index: -1;
+}
+
+.navTwo__container__list:hover .navTwo__li {
+    transition-duration: .5s;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.li__box__column {
+    width: 100%;
+    height: 70px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 0.2s;
+    font-size: 18px;
+    background: #fff;
+}
+
+.li__box__column a {
+    color: #A1A1A1;
+}
+
+.navTwo__li__box .li__box__column:hover {
+    background-color: #F0F0F0;
+    transition: 0.2s;
+}
+
+.join_protect_wrapper {
+    margin-bottom: 100px;
+}
+
+
+/* vitialit title */
+
+.join_protect_title {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.join_protect_title span {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: #0C1E46;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 90px;
+}
+
+
+/* join cost wrapper */
+
+.join_cost_wrapper {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+.step_title,
+.insurance_title,
+.join_title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.step_title img,
+.insurance_title img,
+.join_title img {
+    margin-right: 15px;
+    vertical-align: baseline;
+}
+
+.step_title span,
+.insurance_title span,
+.join_title span {
+    font-size: 25px;
+}
+
+.definition {
+    margin-bottom: 50px;
+}
+
+.definition p {
+    font-size: 20px;
+    padding: 0 25px;
+    line-height: 34px;
+}
+
+.definition span {
+    font-weight: 500;
+}
+
+
+/* step */
+
+.step_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.mo_step .step_num {
+    font-size: 25px;
+    font-weight: 500;
+    color: #4466B2;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mo_step .step_info {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mo_step .step_info .red {
+    color: #C82020;
+}
+
+
+/* link button */
+
+.list_link {
+    text-align: center;
+}
+
+.list_link a {
+    display: block;
+    width: 590px;
+    height: 90px;
+    margin: 0 auto;
+    line-height: 90px;
+    background: #012C8B;
+    color: #fff;
+}
+
+.list_link span {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/* 반응형 425 */
+
+@media ( max-width: 425px) {
+    /* clinical */
+    .join_protect_title {
+        max-width: 89%;
+        margin: 20px auto;
+    }
+    .join_protect_title span {
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+    /* 네비바2 */
+    .navTwo__container {
+        width: 100%;
+    }
+    .navTwo__container__home {
+        display: none;
+    }
+    .navTwo {
+        height: 35px;
+    }
+    .navTwo__container__recruitment {
+        font-size: 11px;
+    }
+    .navTwo__container__list {
+        font-size: 11px;
+    }
+    .navTwo__container__list img {
+        width: 8px;
+        height: 5px;
+    }
+    .navTwo__li {
+        top: 35px;
+        height: 92px;
+        width: 100%;
+        border-right: none;
+    }
+    .li__box__column {
+        height: 30px;
+        font-size: 10px;
+    }
+    .navTwo__container>*:not(:first-child),
+    .navTwo__container>*:not(:last-child) {
+        border: none;
+    }
+    .navTwo__container .navTwo__container__recruitment {
+        border-right: 1px solid #BEBEBE;
+    }
+    .join_protect_wrapper {
+        margin-bottom: 40px;
+    }
+    /* join cost */
+    .join_cost_wrapper {
+        max-width: 89%;
+    }
+    .step_title,
+    .insurance_title,
+    .join_title {
+        margin-bottom: 10px;
+    }
+    .step_title,
+    .insurance_title span,
+    .join_title span {
+        font-size: 15px;
+    }
+    .definition {
+        margin-bottom: 20px;
+    }
+    .definition p {
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 21px;
+    }
+    /* step */
+    .step_wrapper {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .mo_step {
+        margin-bottom: 15px;
+    }
+    .mo_step:nth-child(1) img {
+        content: url('../../common/images/mo_step1.png');
+    }
+    .mo_step:nth-child(2) img {
+        content: url('../../common/images/mo_step2.png');
+    }
+    .mo_step:nth-child(3) img {
+        content: url('../../common/images/mo_step3.png');
+    }
+    .mo_step:nth-child(4) img {
+        content: url('../../common/images/mo_step4.png');
+    }
+    .mo_step .step_num {
+        font-size: 12px;
+        margin: 5px 0px;
+    }
+    .mo_step .step_info {
+        font-size: 11px;
+    }
+    .definition span {
+        font-size: 15px;
+    }
+    .list_link a {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+    }
+}
+
+
+/* 반응형 360 */
+
+@media ( max-width: 360px) {
+    .join_protect_title {
+        max-width: 320px;
+    }
+    /* clinical definition */
+    .join_cost_wrapper {
+        max-width: 320px;
+    }
+    /* schedule */
+    .clinical_schedule_wrapper {
+        max-width: 320px;
+    }
+    /* clinical  */
+    .participant_right_wrapper,
+    .join_cost_wrapper,
+    .from {
+        max-width: 340px;
+    }
+    .participant_right_wrapper {}
+}

@@ -1,0 +1,1495 @@
+/*  */
+a {
+    text-decoration: none;
+}
+
+.volunteer_left_tab {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.volunteer_right_tab {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: none;
+}
+
+
+/* research */
+.research {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.research .research_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #BEBEBE
+
+}
+
+.research .research_wrapper div {
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #AAAAAA;
+}
+
+.research .research_wrapper div.selected {
+    background: #0C1E46;
+    color: #fff;
+}
+
+.research .research_wrapper div:hover:not(div.selected) {
+    cursor: pointer;
+}
+
+.research .research_wrapper div.selected
+.research .research_wrapper div span {
+    color: #AAAAAA;
+    font-size: 18px;
+}
+
+
+
+/* healthy list */
+.healthy_card_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.healthy_card_wrapper .healthy_ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.healthy_card_wrapper .healthy_ul li {
+    border: 1px solid #4466B2;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.healthy_card_wrapper .healthy_ul li.close {
+    border: 1px solid #BEBEBE;
+
+}
+
+.healthy_card_wrapper .healthy_ul li.close span,
+.healthy_card_wrapper .healthy_ul li.close .due_date span,
+.healthy_card_wrapper .healthy_ul li.close .healthy_recruit{
+    color: #BEBEBE;
+}
+
+.healthy_card_wrapper .healthy_ul li.close .healthy_recruit .recruit,
+.healthy_card_wrapper .healthy_ul li.close .healthy_category { 
+    color: #fff;
+}
+
+.healthy_card_wrapper .healthy_ul li.close .recruit_img {
+    display: none;
+}
+
+.healthy_card_wrapper .healthy_ul li.close .healthy_category,
+.healthy_ul li.close .healthy_recruit {
+    background: #BEBEBE;
+}
+
+.healthy_ul li.close .date_wrapper .age::before {
+    content: url('../../common/images/people_icon_close.png');
+}
+
+
+.healthy_card_wrapper .healthy_ul li.almost {
+    border: 1px solid #C82020;
+
+}
+
+.healthy_ul li.almost .healthy_recruit {
+    background: #C82020;
+}
+
+
+.list_top {
+    position: relative;
+    padding: 20px 20px 0 20px;
+    height: 296px;
+}
+
+.healthy_ul li .healthy_img {
+    margin-bottom: 20px;
+}
+
+.healthy_ul li .healthy_img img {
+    width: 100%;
+}
+
+.healthy_ul li .healthy_title_wrapper {
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.healthy_ul li .healthy_title_wrapper .healthy_category {
+    display: inline-block;
+    color: #FFFFFF;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background: #4466B2;
+    font-size: 13px;
+    margin-right: 7px;
+}
+
+.healthy_ul li .healthy_title_wrapper .healthy_title {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+    width: 279px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.healthy_ul li .healthy_hospital {
+    position: relative;
+    /* padding-bottom: 50px; */
+}
+
+.healthy_ul li .healthy_hospital:after {
+    content: '';
+    position: absolute;
+    bottom: -55px;
+    height: 1px;
+    border-bottom: 1px dashed #DEDEDE;
+    width: 111%;
+    left: -20px;
+}
+
+.list_top .tag_list {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+/* .list_top .tag_list:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    border-bottom: 1px dashed #DEDEDE;
+    width: 111%;
+    left: -20px;
+} */
+
+.list_top .tag_list .tag {
+    margin-top: 10px;
+    border: 1px solid #4466B2;
+    border-radius: 50px;
+    padding: 5px;
+    display: inline-block;
+    color: #4466B2;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.healthy_list.close  .list_top .tag_list .tag{
+    border: 1px solid #BEBEBE;
+}
+
+
+.healthy_ul li .healthy_hospital span {
+    color: #8E8E8E;
+    font-size: 14px;
+}
+
+.healthy_ul li .date_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.healthy_ul li .date_wrapper .date > span {
+    display: block;
+}
+
+.healthy_ul li .date_wrapper .date {
+    color: #000;
+    font-size: 13px;
+}
+
+.healthy_ul li .date_wrapper .age {
+    margin-top: 7px;
+    position: relative;
+    font-size: 13px;
+    font-weight: 500;
+    color: #4466B2;
+    padding-left: 25px;
+}
+
+.healthy_ul li .date_wrapper .age::before {
+    position: absolute;
+    content: url('../../common/images/people_icon.png');
+    text-align: center;
+    left: 0;
+    top: -1px;
+}
+
+.healthy_ul li .date_wrapper .due_date_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.healthy_ul li .date_wrapper .due_date_wrapper span {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4466B2;
+    text-align: center;
+}
+
+.healthy_ul li .date_wrapper .due_date_wrapper span:nth-child(1) {
+    margin-bottom: 5px;
+}
+
+.healthy_ul li .healthy_recruit {
+    background: #4466B2;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.healthy_ul li .healthy_recruit:hover .recruit_img img:nth-child(1) {
+    opacity: 1;
+}
+
+.healthy_ul li .healthy_recruit .recruit {
+    color: #fff;
+    font-size: 20px;
+}
+
+.healthy_ul li .healthy_recruit .recruit_img img {
+    position: absolute;
+    right: 35px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.healthy_ul li .healthy_recruit .recruit_img img:nth-child(1) {
+    right: 45px;
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+
+
+/* total recruit */
+.total_recruit {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.total_recruit span {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: #0C1E46;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 90px;
+}
+
+
+
+/* total recruit list */
+.total_recruit_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.total_recruit_wrapper .recruit_ul li {
+    border: 1px solid #4466B2;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 1px 6px #0000001F;
+
+}
+
+/* 마감 */
+.total_recruit_wrapper .recruit_ul li.close {
+    border: 1px solid #BEBEBE;
+}
+
+.recruit_ul li.close .recruit_title_wrapper .recruit_category,
+.recruit_ul li.close .recruit_list_wrapper .recruit_state .state_box {
+    background: #BEBEBE;
+}
+
+.total_recruit_wrapper .recruit_ul li.close .recruit_title_wrapper .recruit_title {
+    color: #8E8E8E;
+}
+
+.total_recruit_wrapper .recruit_ul li.close .date span,
+.recruit_ul li.close .recruit_list_wrapper .recruit_state .recruit_state_wrapper span {
+    color: #BEBEBE;
+}
+
+.recruit_ul li.close .recruit_list_wrapper .recruit_state .state_box .recruit_arrow,
+.recruit_ul li.close .recruit_list_wrapper .recruit_state .recruit_state_wrapper .state_date {
+    display: none;
+}
+
+.recruit_ul li.close .date .age::before {
+    content: url('../../common/images/people_icon_close.png');
+}
+/*  */
+
+
+
+/* 마감임박 */
+.total_recruit_wrapper .recruit_ul li.almost {
+    border: 1px solid #C82020;
+}
+
+.recruit_ul li.almost .recruit_list_wrapper .recruit_state .state_box {
+    background: #C82020;
+}
+
+.state_box .recruit_arrow img:nth-child(1) {
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+/*  */
+
+
+
+.recruit_list_wrapper {
+    display: flex;
+    justify-content: left;
+}
+
+.recruit_list_wrapper .recruit_logo {
+    width: 340px;
+    height: 140px;
+    border: 1px solid #70707066;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.recruit_list_wrapper .recruit_logo img {
+
+}
+
+.recruit_ul li .recruit_title_wrapper {
+    margin-bottom: 7px;
+}
+
+.recruit_ul li .tag_list {
+    margin-bottom: 10px;
+}
+
+.recruit_ul li .tag_list .tag {
+    margin-top: 10px;
+    border: 1px solid #4466B2;
+    border-radius: 50px;
+    padding: 5px;
+    display: inline-block;
+    color: #4466B2;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.recruit_ul li.close .tag_list .tag {
+    border: 1px solid #BEBEBE;
+    color: #BEBEBE;
+}
+
+.recruit_ul li .recruit_title_wrapper .recruit_category {
+    display: inline-block;
+    color: #FFFFFF;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background: #4466B2;
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+.recruit_ul li .recruit_title_wrapper .recruit_title {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.recruit_ul li .healthy_hospital {
+    position: relative;
+    /* margin-bottom: 15px; */
+}
+
+.recruit_ul li .healthy_hospital span {
+    color: #8E8E8E;
+    font-size: 14px;
+}
+
+.recruit_ul li .date{
+    color: #000;
+    font-size: 13px;
+}
+
+.recruit_ul li .date span { 
+    display: block;
+}
+
+.recruit_ul li .date .age {
+    margin-top: 15px;
+    position: relative;
+    font-size: 13px;
+    font-weight: 500;
+    color: #4466B2;
+    padding-left: 25px;
+}
+
+.recruit_ul li .date .age::before {
+    position: absolute;
+    content: url('../../common/images/people_icon.png');
+    text-align: center;
+    left: 0;
+    top: -1px;
+}
+
+
+
+.recruit_ul li .recruit_list_wrapper .recruit_state {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.recruit_ul li .recruit_list_wrapper .recruit_state {
+    
+}
+
+.recruit_ul li .recruit_list_wrapper .recruit_state .recruit_state_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recruit_ul li .recruit_list_wrapper .recruit_state .recruit_state_wrapper span {
+    color: #4466B2;
+    font-size: 17px;
+}
+
+.recruit_ul li .recruit_list_wrapper .recruit_state .recruit_state_wrapper .state_date {
+    margin-left: 5px;
+}
+
+.recruit_ul li .recruit_list_wrapper .recruit_state .state_box {
+    width: 160px;
+    height: 70px;
+    background: #4466B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recruit_ul li .recruit_list_wrapper .recruit_state .state_box:hover .recruit_arrow img:nth-child(1){
+    opacity: 1;
+}
+
+
+.recruit_ul li .recruit_list_wrapper .recruit_state .state_box span{
+    color: #fff;
+    font-size: 20px;
+}
+
+.recruit_ul li .recruit_list_wrapper .recruit_state .state_box .recruit_arrow {
+    margin-left: 20px;
+    font-size: 0;
+}
+
+
+
+/* notice */
+.notice_wrapper {
+    max-width: 1200px;
+    margin: 0px auto 100px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_notice_title {
+    display: none;
+}
+
+.main_notice_card {
+    border: 1px solid #BEBEBE;
+    margin-right: 30px;
+}
+
+.main_notice_card {
+    display: none;
+}
+
+.main_notice_card.main {
+    display: block;
+}
+
+.main_notice_card img{
+    width: 100%;
+}
+
+
+.main_notice_wrapper .notice_info {
+    padding: 20px;
+}
+
+.main_notice_wrapper .notice_info span {
+    display: block;
+}
+
+.main_notice_wrapper .notice_info .notice_title {
+    color: #000000;
+    font-size: 17px;
+    position: relative;
+    padding-left: 42px;
+    margin: 2px 0 44px;
+
+    height: 32px;
+    line-height: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-y: visible;
+    text-overflow: ellipsis;
+}
+
+.main_notice_wrapper .notice_info .notice_title:before {
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    content: url('../../common/images/notice.png');
+    overflow: visible;
+}
+
+.main_notice_wrapper .notice_info .notice_date {
+    font-size: 14px;
+    color: #8E8E8E;
+}
+
+.notice_list_wrapper {
+    max-width: 585px;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.notice_list_wrapper .notice_list_title {
+    display: none;
+}
+
+.notice_list_wrapper .notice_list {
+    width: 100%;
+}
+
+.notice_list .notice_ul {
+    border: 1px solid #BEBEBE;
+    overflow: auto;
+    height: 220px;
+}
+
+.notice_list .notice_ul li {
+    position: relative;
+    padding: 20px;
+    display: block;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.notice_list .notice_ul li:last-child {
+    border-bottom: none;
+}
+
+.notice_list .notice_ul li span {
+    position: relative;
+    font-size: 17px;
+    color: #000;
+    padding-left: 47px;
+}
+.notice_list .notice_ul li span::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: url('../../common/images/question-circle.png');
+}
+
+.notice_list .notice_ul li img {
+    position: absolute;
+    right: 20px;
+}
+
+.notice_list_wrapper .customer_center {
+    width: 100%;
+    height: 170px;
+    border: 1px solid #BEBEBE;
+    padding: 30px;
+    position: relative;
+}
+
+.customer_center_info {
+    margin-top: 10px;
+    position: relative;
+}
+
+.customer_center::before {
+    content: url('../../common/images/phonecall.png');
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+}
+
+.customer_center_info > span {
+    display: block;
+    /* margin-bottom: 10px; */
+}
+
+.customer_center_info .center_title{
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.customer_center_info .center_tel{
+    font-size: 30px;
+    font-weight: bold;
+    color: #012C8B;
+    margin-bottom: 30px;
+
+}
+
+.customer_center_info .tel {
+    font-size: 17px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.customer_center_info .center_time,
+.customer_center_info .center_break_time {
+    font-size: 14px;
+    color: #8E8E8E;
+    margin-bottom: 0px;
+}
+
+.customer_center_info .center_time {
+    margin-bottom: 3px;
+}
+
+.customer_center_box {
+    position: absolute;
+    right: 30px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.customer_center_box > div {
+    text-align: center;
+    line-height: 50px;
+}
+
+.customer_center_box .center_route {
+    background: #8E8E8E;
+    margin-bottom: 5px;
+}
+
+.customer_center_box .center_faq {
+    background: #4466B2;
+}
+
+.customer_center_box > div span {
+    display: block;
+    width: 160px;
+    height: 50px;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/* 크래프트블랙 티오티더블블랙 밀키스 코카콜라 파워에이드  */
+/* hospital swiper */
+.hospital_swiper_wrapper {
+    width: 100%;
+    border-top: 1px solid #BEBEBE;
+
+}
+
+.hospital_swiper_wrapper > div{
+    max-width: 1200px;
+    margin: 0px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.hospital_swiper_wrapper .flow_bn {
+    position: relative;
+}
+
+.hospital_swiper_wrapper .flow_bn .swiper-container3 {
+    padding: 20px 0;
+}
+
+.arrow_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    position: absolute;
+    right: 0;
+    top: 65%;
+}
+
+.arrow_wrapper .swiper-button-next {
+    width: 20px;
+    height: 17px;
+    background: url('../../common/images/arrow_right.png') no-repeat; 
+    z-index: 9;
+}
+
+.arrow_wrapper .swiper-button-prev{
+    width: 20px;
+    height: 17px;
+    background: url('../../common/images/arrow_left.png') no-repeat; 
+    right: 28px; 
+    left: auto; 
+    z-index: 9;
+    bottom: 0;
+}
+
+
+
+/* disease check */
+.disease_check {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #BEBEBE;
+    box-shadow: 0px 1px 6px #0000001F;
+
+}
+
+.disease_check .check_title {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    background: #F0F0F0;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.disease_check .check_title img {
+    margin-right: 8px;
+}
+
+.disease_check .check_title span {
+    font-size: 22px;
+}
+
+.disease_check .check_ul_wrapper {
+    background: #fff;
+}
+
+.check_ul {
+
+}
+
+.check_ul li {
+    margin: 0 50px;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.check_list_info {
+    height: 60px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.check_list_info .chk_item_title {
+    width: 25%;
+    margin-left: 11px;
+}
+
+.check_list_info .chk_item_title span {
+    font-size: 20px;
+}
+
+.form_toggle {
+    display: none;
+}
+
+
+.chk_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chk_item .item {
+    margin-right: 20px;
+}
+
+.chk_item .item input{
+
+}
+
+.chk_item .item label{
+    color: #707070;
+    font-size: 18px;
+}
+
+.check_button {
+    padding: 20px 50px;
+    
+}
+
+.check_button button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background: #4466B2;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* disease selected */
+
+.disease_selected {
+    margin-top: 50px;
+}
+
+.disease_selected_all {
+    border-bottom: 1px solid #0C1E46;
+    padding-bottom: 10px;
+
+}
+
+.disease_selected_all span{
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.disease_selected .total_recruit_wrapper{
+    margin-top: 30px;
+    padding: 0;
+}
+
+.disease_selected .recruit_ul li .date .tag {
+    margin-top: 10px;
+    border: 1px solid #4466B2;
+    border-radius: 50px;
+    padding: 5px;
+    display: inline-block;
+    color: #4466B2;
+    margin-right: 5px;
+}
+
+.disease_selected .recruit_ul li .healthy_hospital {
+    margin-bottom: 10px;
+}
+
+.disease_selected .recruit_ul li .date .age {
+    margin-top: 10px;
+}
+
+.disease_selected .total_recruit_wrapper .recruit_ul li:last-child {
+    margin-bottom: 0;
+}
+.view_more {
+    margin: 50px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view_more button {
+    width: 350px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    background: #4466B2;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+/* 반응형 425 */
+@media ( max-width: 425px )  {
+
+    .research {
+        padding: 0 20px;
+        margin: 20px auto;
+    }
+    
+    .research .research_wrapper {
+        height: 35px;
+    }
+
+
+    .research .research_wrapper div {
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .research .research_wrapper div span {
+        font-size: 12px;
+    }
+
+    .healthy_card_wrapper {
+        max-width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .healthy_card_wrapper .healthy_ul {
+        max-width: 89%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .healthy_card_wrapper .healthy_ul li {
+        margin-bottom: 10px;
+    }
+
+    .healthy_ul li .healthy_hospital {
+        /* padding-bottom: 30px; */
+    }
+
+    .healthy_card_wrapper .healthy_ul li:last-child {
+        margin-bottom: 20px;
+
+    }
+
+    .healthy_ul li .healthy_title_wrapper .healthy_title {
+        display: inline-block;
+        font-size: 15px;
+        width: 282px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .healthy_ul li .healthy_title_wrapper .healthy_category {
+        font-size: 11px;
+        height: 21px;
+        line-height: 21px;
+    }
+
+    /* total recruit */
+    .total_recruit {
+        max-width: 89%;
+        margin: 20px auto;
+    }
+
+    .total_recruit span {
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+
+
+
+    /* total_recruit_wrapper */
+    .total_recruit_wrapper {
+        max-width: 89%;
+        margin: 20px auto;
+    }
+
+    .recruit_list_wrapper .recruit_logo {
+        display: none;
+    }
+
+    .total_recruit_wrapper .recruit_ul li {
+        padding: 12px 10px;
+        margin-bottom: 10px;
+    }
+
+    .recruit_ul li .recruit_list_wrapper .recruit_state {
+        width: 86px;
+        height: 35px;
+        bottom: 15px;
+    }
+     
+    .recruit_ul li .recruit_list_wrapper .recruit_state .recruit_state_wrapper {
+        margin-bottom: 5px;
+    }
+
+    .recruit_ul li .recruit_list_wrapper .recruit_state .recruit_state_wrapper span {
+        font-size: 11px;
+    }
+
+    .recruit_ul li .recruit_list_wrapper .recruit_state .state_box {
+        width: 100%;
+        height: 100%;
+    }
+    .recruit_ul li .recruit_list_wrapper .recruit_state .state_box span {
+        font-size: 10px;
+    }
+
+    .recruit_ul li .recruit_list_wrapper .recruit_state .state_box .recruit_arrow img{
+        content: url('../../common/images/mobile_arrow.png');
+    }
+
+    .recruit_ul li .date .age {
+        margin-top: 10px;
+    }
+
+    .recruit_ul li .recruit_info {
+        height: 122px;
+    }
+
+    .recruit_ul li .recruit_info .tag_list .tag{
+        font-size: 10px;
+    }
+
+    .recruit_ul li .recruit_info .date {
+        position: absolute;
+        bottom: 12px;
+    }
+
+    /* notice */
+    .notice_wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+        border: none;
+        display: block;
+        padding: 20px;
+
+    }
+
+    .main_notice_title,
+    .notice_list_wrapper .notice_list_title {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .main_notice_title span,
+    .notice_list_wrapper .notice_list_title span {
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        color: #0C1E46;
+    }
+
+    .main_notice_card {
+        margin: 0;
+    }
+
+    .notice_img {
+        display: none;
+    }
+
+    .main_notice_wrapper {
+        margin-bottom: 20px;
+    }
+
+    .main_notice_wrapper .notice_info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 11px;
+    }
+
+    .main_notice_wrapper .notice_info .notice_title {
+        font-size: 10px;
+        height: 18px;
+        line-height: 18px;
+        padding-left: 25px;
+        margin: 0 24px 0 0;
+    }
+
+    .main_notice_wrapper .notice_info .notice_title:before {
+        content: url('../../common/images/mobile_notice.png');
+        height: 18px;
+    }
+
+    .main_notice_wrapper .notice_info .notice_date {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .main_notice_card {
+        display: block;
+        /* border: none; */
+        border-bottom: none;
+        border-top: none;
+    }
+
+    .main_notice_wrapper .main_notice_card {
+        height: 40px;
+    }
+
+    .main_notice_wrapper .main_notice_card.main {
+        border-top: 1px solid #BEBEBE;
+    }
+
+    .main_notice_wrapper .main_notice_card:last-of-type {
+        border-bottom: 1px solid #BEBEBE;
+    }
+
+    .notice_list_wrapper {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .notice_list_wrapper .notice_list {
+        margin-bottom: 20px;
+    }
+    
+    .notice_list_wrapper .notice_list_title {
+        display: block;
+    }
+
+    .notice_list .notice_ul {
+        height: 120px;
+    }
+
+    .notice_list .notice_ul li {
+        border: none;
+        padding: 11px;
+    }
+
+    .notice_list .notice_ul li span {
+        font-size: 10px;
+        padding-left: 25px;
+    }
+
+    .notice_list .notice_ul li span::before {
+        content: url('../../common/images/mobile_question-circle.png');
+    }
+
+    .notice_list .notice_ul li img {
+        display: none;
+    }
+
+
+
+    /* notice list */
+    .notice_list_wrapper .customer_center {
+        width: inherit;
+        padding: 15px;
+        height: 150px;
+    }
+
+    .customer_center::before {
+        content: url('../../common/images/mbile_phonecall.png');
+        right: 0;
+        left: inherit;
+    }
+
+    .customer_center_info {
+        margin: 0 0 15px 0;
+    }
+
+    .customer_center_info .center_title {
+        font-size: 13px;
+    }
+
+    .customer_center_info .center_tel {
+        font-size: 14px;
+    }
+
+    .customer_center_info .tel {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .customer_center_box {
+        position: inherit;
+        right: inherit;
+        bottom: inherit;
+        transform: inherit;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customer_center_info .center_time, 
+    .customer_center_info .center_break_time {
+        font-size: 10px;
+    }
+
+    .customer_center_box .center_route {
+        margin: 0;
+    }
+
+    .customer_center_box > div {
+        width: 100%;
+    }
+
+    .customer_center_box > div span {
+        height: 30px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    /* swiper */
+    .hospital_swiper_wrapper {
+        display: none;
+    }
+
+
+    /* tab2 */
+
+    .disease_check {
+        max-width: 89%;
+    }
+
+    .disease_check .check_title span {
+        font-size: 13px;
+    }
+    .disease_check .check_title img{
+        vertical-align: middle;
+    }
+
+    .check_list_info {
+        display: block;
+        height: inherit;
+    }
+
+    .check_list_info .chk_item_title {
+        width: inherit;
+        margin: 10px 0;
+    }
+
+    .check_ul li {
+        margin: 0 15px;
+    }
+
+    .chk_item {
+        justify-content: left;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    .chk_item .item {
+        margin-right: 10px;
+    }
+
+    .check_list_info .chk_item_title span,
+    .chk_item .item label {
+        font-size: 12px;
+    }
+
+    .check_button {
+        padding: 20px 15px;
+    }
+
+    .check_button button {
+        height: 40px;
+        line-height: 40px;
+        font-size: 13px;
+    }
+
+    .disease_selected {
+        /* width: 89%; */
+        margin: 20px auto 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #BEBEBE;
+    }
+
+    .disease_selected_all {
+        display: none;
+    }
+
+    .recruit_ul li .recruit_title_wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .recruit_ul li .recruit_title_wrapper .recruit_title {
+        font-size: 12px;
+    }
+
+    .recruit_ul li .recruit_title_wrapper .recruit_category {
+        font-size: 11px;
+        margin-right: 6px;
+        height: 21px;
+        line-height: 21px;
+    }
+
+    .recruit_ul li .healthy_hospital span,
+    .recruit_ul li .date,
+    .disease_selected .recruit_ul li .date .age {
+        font-size: 11px;
+    }
+
+    .disease_selected .recruit_ul li .date .tag {
+        display: none;
+    }
+
+
+    .recruit_ul li .recruit_list_wrapper .recruit_state .state_box .recruit_arrow {
+        margin-left: 15px;
+    }
+
+    .view_more {
+        display: none;
+    }
+    
+
+}
+
+
+
+/* 반응형 360 */
+@media ( max-width: 360px )  {
+
+    .research {
+        margin-top: 45px;
+    }
+
+    .healthy_card_wrapper {
+        max-width: 320px;
+    }
+
+    .healthy_card_wrapper .healthy_ul {
+        max-width: 320px;
+    }
+
+    .swiper-container .swiper-wrapper .swiper-slide img {
+        height: 200px;
+    }
+
+    .healthy_ul li .healthy_title_wrapper .healthy_title {
+        display: inline-block;
+        font-size: 15px;
+        width: 217px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .healthy_img img{
+        width: 100%;
+    }
+
+    .healthy_ul li .healthy_hospital span {
+        font-size: 12px;
+    }
+
+    .healthy_ul li .healthy_hospital {
+        padding-bottom: 30px;
+    }
+
+    .healthy_ul li .healthy_hospital:after {
+        width: 320px;
+    }
+
+    .healthy_ul li .date_wrapper .date {
+        font-size: 12px;
+    }
+
+    .healthy_ul li .date_wrapper .due_date_wrapper span {
+        font-size: 13px;
+    }
+
+    .healthy_ul li .healthy_recruit .recruit {
+        font-size: 16px;
+    }
+    
+    .total_recruit_wrapper {
+        margin-bottom: 0px;
+        max-width: initial;
+    }
+
+    .total_recruit {
+        max-width: 320px;
+    }
+
+    .total_recruit_wrapper .recruit_ul li {
+        margin-bottom: 10px;
+    }
+
+    .recruit_ul li .recruit_title_wrapper .recruit_title {
+        display: inline-block;
+        width: 217px;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .recruit_ul li .healthy_hospital span,
+    .recruit_ul li .date,
+    .recruit_ul li .date .age {
+        font-size: 11px;
+    }
+
+    .recruit_ul li .healthy_hospital {
+    }
+
+    .notice_wrapper {
+        max-width: 320px;
+        padding: 20px;
+    }
+
+    .notice_list_wrapper {
+        margin-bottom: 20px;
+    }
+
+    .customer_center_info .center_tel {
+        margin-bottom: 15px;
+    }
+
+    .notice_list_wrapper .customer_center {
+        height: 130px;
+    }
+
+
+    /* tab2 */
+    .disease_check,
+    .disease_selected {
+        max-width: 320px;
+    }
+}

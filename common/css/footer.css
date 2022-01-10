@@ -1,0 +1,130 @@
+
+/* footer */
+.footer_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 2px solid #012C8B;
+    /* background: #F0F0F0; */
+
+}
+
+.footer_wrapper .footer_top {
+    width: 100%;
+    background: #F0F0F0;
+}
+
+.footer_wrapper .footer_top_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.footer_wrapper .footer_top_wrapper span,
+.footer_wrapper .footer_top_wrapper span a {
+    color: #000;
+    font-size: 15px;
+}
+
+.footer_wrapper .footer_bottom {
+    width: 100%;
+}
+
+.footer_wrapper .footer_bottom_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 125px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.footer_wrapper .footer_bottom_wrapper .bottom_logo {
+    margin-right: 30px;
+}
+
+.footer_wrapper .footer_bottom_wrapper .footer_info .boss {
+    display: none;
+}
+
+.footer_wrapper .footer_bottom_wrapper .footer_info  > span {
+    display: block;
+    color: #8E8E8E;
+    margin-bottom: 7px;
+}
+
+.footer_wrapper .footer_bottom_wrapper .footer_info  > .address {
+    margin-bottom: 15px;
+}
+
+.footer_wrapper .footer_bottom_wrapper .footer_info .footer_copyright {
+    color: #BEBEBE;
+}
+
+
+
+
+/* 반응형 425 */
+@media ( max-width: 425px )  {
+    /* footer */
+    footer {
+
+    }
+
+    .footer_wrapper {
+    
+    }
+
+    .footer_wrapper .footer_top {
+        display: none;
+    }
+    
+    .footer_wrapper .footer_bottom_wrapper{
+        padding: 15px 20px;
+        background: #313131;
+        height: auto;
+    }
+
+    .footer_wrapper .footer_bottom_wrapper .bottom_logo {
+        display: none;
+    }
+
+    .footer_wrapper .footer_bottom_wrapper .footer_info span,
+    .footer_wrapper .footer_bottom_wrapper .footer_info .footer_copyright {
+        color: #FFFFFF;
+        font-size: 10px;
+        width: 250px;
+    }
+
+    .footer_wrapper .footer_bottom_wrapper .footer_info .address {
+        width: 200px;
+        line-height: 1.8;
+    }
+    
+    .footer_wrapper .footer_bottom_wrapper .footer_info .footer_copyright {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .footer_wrapper .footer_bottom_wrapper .footer_info .boss {
+        display: block;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+}
+
+
+/* 반응형 360 */
+@media ( max-width: 360px )  {
+    
+    .footer_wrapper {
+        border-top: none;
+    }
+
+}

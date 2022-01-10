@@ -1,0 +1,344 @@
+/*  */
+
+* {
+    font-family: 'Noto Sans KR';
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*navTwo*/
+
+.navTwo {
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.navTwo__container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navTwo__container__home {
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navTwo__container>*:not(:last-child) {
+    border-left: 1px solid #BEBEBE;
+}
+
+.navTwo__container>*:not(:first-child) {
+    border-right: 1px solid #BEBEBE;
+}
+
+.navTwo__container__recruitment {
+    width: 300px;
+    height: 100%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 31px;
+}
+
+.navTwo__container__list {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.navTwo__li {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 351px;
+    height: 142px;
+    position: absolute;
+    top: 90px;
+    left: -1px;
+    border: 1px solid #BEBEBE;
+    opacity: 0;
+    z-index: -1;
+}
+
+.navTwo__container__list:hover .navTwo__li {
+    transition-duration: .5s;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.li__box__column {
+    width: 100%;
+    height: 70px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 0.2s;
+    font-size: 18px;
+    background: #fff;
+}
+
+.li__box__column a {
+    color: #A1A1A1;
+}
+
+.navTwo__li__box .li__box__column:hover {
+    background-color: #F0F0F0;
+    transition: 0.2s;
+}
+
+
+/* apply */
+
+.apply_wrapper {
+    max-width: 1200px;
+    margin: 50px auto 100px;
+}
+
+.apply {
+    background: #F5F7FB;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.apply .apply_check_img img {
+    margin: 50px auto;
+}
+
+.user_apply {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.apply_info {
+    padding: 0 375px;
+    margin-bottom: 45px;
+}
+
+.apply_info>div {
+    margin-bottom: 20px;
+}
+
+.apply_info .name,
+.apply_info .date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.apply_caution {
+    padding-bottom: 50px;
+}
+
+.apply_caution span {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #8E8E8E;
+    margin-bottom: 20px;
+}
+
+
+/* apply link */
+
+.apply_btn_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apply_btn_wrapper>div {
+    margin: 0 15px;
+    border: 1px solid #4466B2;
+}
+
+.apply_btn_wrapper>div a {
+    display: block;
+    padding: 20px 100px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.apply_btn_wrapper .list_link a {
+    color: #4466B2;
+}
+
+.apply_btn_wrapper .apply_link {
+    background: #4466B2;
+}
+
+
+/* 반응형 425 */
+
+@media ( max-width: 425px) {
+    /* 네비바2 */
+    .navTwo__container {
+        width: 100%;
+    }
+    .navTwo__container__home {
+        display: none;
+    }
+    .navTwo {
+        height: 35px;
+    }
+    .navTwo__container__recruitment {
+        font-size: 11px;
+    }
+    .navTwo__container__list {
+        font-size: 11px;
+    }
+    .navTwo__container__list img {
+        width: 8px;
+        height: 5px;
+    }
+    .navTwo__li {
+        top: 35px;
+        height: 62px;
+        width: 100%;
+        border-right: none;
+    }
+    .li__box__column {
+        height: 30px;
+        font-size: 10px;
+    }
+    .navTwo__container>*:not(:first-child),
+    .navTwo__container>*:not(:last-child) {
+        border: none;
+    }
+    .navTwo__container .navTwo__container__recruitment {
+        border-right: 1px solid #BEBEBE;
+    }
+    /* apply */
+    .apply_wrapper {
+        margin-bottom: 40px;
+    }
+    .apply {
+        max-width: 385px;
+        margin: 0 20px 20px;
+    }
+    .apply .apply_check_img img {
+        margin: 35px auto;
+        content: url('../../common/images/mo_apply_check.png');
+    }
+    .user_apply {
+        font-size: 17px;
+        padding: 0 86px;
+        margin-bottom: 20px;
+        line-height: 26px;
+    }
+    .apply_info {
+        padding: 0 35px;
+        margin-bottom: 20px;
+    }
+    .apply_info .name,
+    .apply_info .date {
+        font-size: 14px;
+    }
+    .apply_info>div {
+        margin-bottom: 10px;
+    }
+    .apply_caution span {
+        font-size: 13px;
+        margin-bottom: 10px;
+        padding: 0px 41px;
+    }
+    .apply_caution {
+        padding-bottom: 40px;
+    }
+    .apply_btn_wrapper {
+        max-width: 385px;
+        margin: 0 auto;
+        display: block;
+    }
+    .apply_btn_wrapper>div {
+        margin: 0 45px;
+    }
+    .apply_btn_wrapper>div a {
+        padding: 15px 73px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .apply_btn_wrapper>.list_link {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* 반응형 360 */
+
+@media ( max-width: 360px) {
+    /* apply */
+    .apply_wrapper {
+        margin-bottom: 40px;
+    }
+    .apply {
+        max-width: 385px;
+        margin: 0 20px 20px;
+    }
+    .apply .apply_check_img img {
+        margin: 35px auto;
+        content: url('../../common/images/mo_apply_check.png');
+    }
+    .user_apply {
+        font-size: 17px;
+        padding: 0 62px;
+        margin-bottom: 20px;
+        line-height: 26px;
+    }
+    .apply_info {
+        padding: 0 35px;
+        margin-bottom: 20px;
+    }
+    .apply_info .name,
+    .apply_info .date {
+        font-size: 14px;
+    }
+    .apply_info>div {
+        margin-bottom: 10px;
+    }
+    .apply_caution span {
+        font-size: 13px;
+        margin-bottom: 10px;
+        padding: 0px 14px;
+    }
+    .apply_caution {
+        padding-bottom: 40px;
+    }
+    .apply_btn_wrapper {
+        max-width: 385px;
+        display: block;
+    }
+    .apply_btn_wrapper>div {
+        margin: 0 45px;
+    }
+    .apply_btn_wrapper>div a {
+        padding: 15px 73px;
+        font-size: 15px;
+    }
+    .apply_btn_wrapper>.list_link {
+        margin-bottom: 10px;
+    }
+}

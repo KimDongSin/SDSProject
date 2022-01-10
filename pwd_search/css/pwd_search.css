@@ -1,0 +1,178 @@
+/* ID/PASSWORD SEARCH */
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 687px;
+}
+
+.search__container {
+    width: 1200px;
+    height: 537px;
+    border: 1px solid #BEBEBE;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.search__container__left {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search__container__left>h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 31px;
+}
+
+.container__left__text {
+    text-align: center;
+    font-size: 14px;
+    color: #8E8E8E;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+
+.container__left__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container__left__form>input {
+    height: 60px;
+    font-size: 16px;
+    background-color: #F0F0F0;
+    border: none;
+    padding: 0 20px;
+}
+
+.container__left__form>button {
+    width: 100%;
+    height: 60px;
+    background-color: #0C1E46;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.container__left__form>input::placeholder {
+    color: #8E8E8E;
+}
+
+.container__left__form>*:not(:last-child) {
+    margin-top: 10px;
+}
+
+.search__container .search__container__left:last-child {
+    margin-left: 60px;
+}
+
+.container__left__find {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 40px;
+    display: none;
+}
+
+.container__left__find a {
+    color: #0C1E46;
+    font-size: 12px;
+}
+
+.container__left__find>p {
+    width: 1px;
+    height: 15px;
+    background-color: #0C1E46;
+    margin: 0 20px;
+}
+
+
+/* 반응형 425 */
+
+@media ( max-width: 425px) {
+    .search__container {
+        border: none;
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .search__container .search__container__left:first-child {
+        margin-bottom: 20px;
+    }
+    .search__container__left {
+        width: 100%;
+    }
+    .search__container .search__container__left:last-child {
+        padding-top: 20px;
+        margin: 0px;
+        border-top: 1px solid #BEBEBE;
+    }
+    .search {
+        padding: 100px 0;
+    }
+    .banner {
+        margin-bottom: 50px;
+    }
+    .search__container__left>h1 {
+        font-size: 17px;
+    }
+    .container__left__text {
+        font-size: 12px;
+    }
+    .container__left__form>input {
+        height: 40px;
+        font-size: 12px;
+    }
+    .container__left__form>button {
+        height: 40px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .container__left__form>*:not(:last-child) {
+        margin-top: 5px;
+    }
+    .container__left__find {
+        display: flex;
+    }
+    .search {
+        height: 650px;
+        padding: 0 0 50px;
+    }
+}
+
+
+/* 반응형 360 */
+
+@media ( max-width: 360px) {
+    .search__container {
+        border: none;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* 반응형 320 */
+
+@media ( max-width: 320px) {
+    .search__container {
+        border: none;
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

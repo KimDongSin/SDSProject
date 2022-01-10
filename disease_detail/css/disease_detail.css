@@ -1,0 +1,616 @@
+/*  */
+
+* {
+    font-family: 'Noto Sans  KR';
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*navTwo*/
+
+.navTwo {
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.navTwo__container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navTwo__container__home {
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navTwo__container>*:not(:last-child) {
+    border-left: 1px solid #BEBEBE;
+}
+
+.navTwo__container>*:not(:first-child) {
+    border-right: 1px solid #BEBEBE;
+}
+
+.navTwo__container__recruitment {
+    width: 300px;
+    height: 100%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 31px;
+}
+
+.navTwo__container__list {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.navTwo__li {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 351px;
+    height: 142px;
+    position: absolute;
+    top: 90px;
+    left: -1px;
+    border: 1px solid #BEBEBE;
+    opacity: 0;
+    z-index: -1;
+}
+
+.navTwo__container__list:hover .navTwo__li {
+    transition-duration: .5s;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.li__box__column {
+    width: 100%;
+    height: 70px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 0.2s;
+    font-size: 18px;
+    background: #fff;
+}
+
+.li__box__column a {
+    color: #A1A1A1;
+}
+
+.navTwo__li__box .li__box__column:hover {
+    background-color: #F0F0F0;
+    transition: 0.2s;
+}
+
+
+/* total recruit */
+
+.heathy_volunteer_title {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.heathy_volunteer_title span {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: #0C1E46;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 90px;
+}
+
+
+/* volunteer button */
+
+.volunteer_btn_wrapper {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.volunteer_btn_wrapper>div {
+    margin-right: 20px;
+}
+
+.volunteer_btn_wrapper>div button.active {
+    color: #0C1E46;
+}
+
+.volunteer_btn_wrapper>div button {
+    display: block;
+    background: #fff;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    color: #8E8E8E;
+    font-weight: bold;
+}
+
+.volunteer_btn_wrapper>.clinical_btn {
+    margin-right: 0;
+}
+
+
+/* total recruitst */
+
+.healthy_detail_wrapper {
+    max-width: 1200px;
+    margin: 90px auto 0;
+    padding-bottom: 20px;
+}
+
+.healthy_detail_wrapper .healthy_detail {
+    border-top: 1px solid #BEBEBE;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.healthy_detail_wrapper .healthy_detail {}
+
+.hospital_wrapper {
+    padding: 25px 50px;
+}
+
+.healthy_detail_wrapper .healthy_detail:last-child {
+    border: none;
+}
+
+.volunteer_list_wrapper {
+    display: flex;
+    justify-content: left;
+}
+
+.volunteer_list_wrapper .hospital_logo {
+    width: 340px;
+    height: 140px;
+    border: 1px solid #70707066;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    background: #fff;
+}
+
+.volunteer_list_wrapper .hospital_logo img {}
+
+.healthy_detail .hospital_title_wrapper {
+    margin-bottom: 20px;
+}
+
+.healthy_detail .hospital_title_wrapper .hospital_category {
+    display: inline-block;
+    color: #FFFFFF;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background: #4466B2;
+    font-size: 13px;
+    margin-right: 7px;
+}
+
+.healthy_detail .hospital_title_wrapper .hospital_title {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.healthy_detail .healthy_hospital {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.healthy_detail .healthy_hospital span {
+    color: #BEBEBE;
+    font-size: 14px;
+}
+
+.healthy_detail .date {
+    color: #000;
+    font-size: 13px;
+}
+
+.healthy_detail .date .tag {
+    margin-top: 10px;
+    border: 1px solid #4466B2;
+    border-radius: 50px;
+    padding: 5px;
+    display: inline-block;
+    color: #4466B2;
+    margin-right: 5px;
+}
+
+.healthy_detail .date span {
+    display: block;
+}
+
+.healthy_detail .date .age {
+    margin-top: 20px;
+    position: relative;
+    font-size: 13px;
+    font-weight: 500;
+    color: #4466B2;
+    padding-left: 25px;
+}
+
+.healthy_detail .date .age::before {
+    position: absolute;
+    content: url('../../common/images/people_icon.png');
+    text-align: center;
+    left: 0;
+    top: -1px;
+}
+
+
+/* detail info */
+
+.healthy_info {
+    padding: 30px;
+}
+
+.healthy_info p {
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.download_wrapper {
+    padding: 20px;
+    background: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #BEBEBE;
+    border-bottom: 1px solid #BEBEBE;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.download_wrapper a {
+    color: #8E8E8E;
+}
+
+.list_wrapper {
+    text-align: right;
+    margin-top: 20px;
+    height: 27px;
+}
+
+.list_wrapper a {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7px 20px;
+    border: 1px solid #BEBEBE;
+    color: #8E8E8E;
+}
+
+
+/* right detail */
+
+.detail_date_wrapper {
+    background: #ECEFF7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail_body_test,
+.detail_date {
+    margin-bottom: 50px;
+}
+
+.detail_body_test .body_test_title,
+.detail_date .detail_date_title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px 0 20px;
+}
+
+.detail_body_test .body_test_schedule,
+.detail_date .detail_date_info {
+    background: #fff;
+    height: 180px;
+    overflow: auto;
+    width: 550px;
+}
+
+.detail_body_test .body_test_schedule p,
+.detail_date .detail_date_info p {
+    padding: 20px 25px;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.apply_button {
+    margin-top: 25px;
+}
+
+.apply_button button {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background: #4466B2;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.apply_button.bottom {
+    text-align: center;
+}
+
+.apply_button.bottom button {
+    padding: 20px 130px;
+    width: initial;
+}
+
+
+/* 반응형 425 */
+
+@media ( max-width: 425px) {
+    /* 네비바2 */
+    .navTwo__container {
+        width: 100%;
+    }
+    .navTwo__container__home {
+        display: none;
+    }
+    .navTwo {
+        height: 35px;
+    }
+    .navTwo__container__recruitment {
+        font-size: 11px;
+    }
+    .navTwo__container__list {
+        font-size: 11px;
+    }
+    .navTwo__container__list img {
+        width: 8px;
+        height: 5px;
+    }
+    .navTwo__li {
+        top: 35px;
+        height: 62px;
+        width: 100%;
+        border-right: none;
+    }
+    .li__box__column {
+        height: 30px;
+        font-size: 10px;
+    }
+    .navTwo__container>*:not(:first-child),
+    .navTwo__container>*:not(:last-child) {
+        border: none;
+    }
+    .navTwo__container .navTwo__container__recruitment {
+        border-right: 1px solid #BEBEBE;
+    }
+    /* total recruit */
+    .heathy_volunteer_title {
+        max-width: 89%;
+        margin: 20px auto;
+    }
+    .heathy_volunteer_title span {
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+    .volunteer_btn_wrapper {
+        max-width: 89%;
+    }
+    .volunteer_btn_wrapper>div {
+        margin-right: 10px;
+    }
+    .volunteer_btn_wrapper>div button {
+        font-size: 14px;
+    }
+    .no_result span {
+        font-size: 13px;
+    }
+    /* healthy_detail_wrapper */
+    .healthy_detail_wrapper {
+        max-width: 89%;
+        margin: 20px auto;
+    }
+    .volunteer_list_wrapper .hospital_logo {
+        margin: 15px auto 0;
+    }
+    .healthy_detail_wrapper .healthy_detail {
+        margin-bottom: 10px;
+    }
+    .healthy_detail_wrapper .healthy_detail.close {
+        border: 1px solid #BEBEBE;
+    }
+    .healthy_detail_wrapper .healthy_detail.almost {
+        border: 1px solid #C82020;
+    }
+    .healthy_detail .volunteer_list_wrapper .hospital_state {
+        width: 86px;
+        height: 35px;
+        bottom: 15px;
+    }
+    .healthy_detail .volunteer_list_wrapper .hospital_state .hospital_state_wrapper {
+        margin-bottom: 5px;
+    }
+    .healthy_detail .volunteer_list_wrapper .hospital_state .hospital_state_wrapper span {
+        font-size: 11px;
+    }
+    .healthy_detail .volunteer_list_wrapper .hospital_state .state_box {
+        width: 100%;
+        height: 100%;
+    }
+    .healthy_detail .volunteer_list_wrapper .hospital_state .state_box span {
+        font-size: 10px;
+    }
+    .healthy_detail .volunteer_list_wrapper .hospital_state .state_box .arrow img {
+        content: url('../../common/images/mobile_arrow.png');
+    }
+    .volunteer_arrow_wrapper {
+        margin: 0 auto 20px;
+    }
+    .volunteer_arrow_wrapper>ul {
+        padding: 0 12px;
+    }
+    .volunteer_arrow_wrapper>ul> {
+        padding: 0 8px;
+    }
+    .volunteer_arrow_wrapper>ul>span {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .prev_wrapper .first_arrow {
+        margin-right: 5px;
+    }
+    .next_wrapper .last_arrow {
+        margin-left: 5px;
+    }
+    .first_arrow {
+        content: url('../../common/images/mo_double_left_arrow.png');
+    }
+    .prev_arrow {
+        content: url('../../common/images/mo_left_arrow.png');
+    }
+    .next_arrow {
+        content: url('../../common/images/mo_right_arrow.png');
+    }
+    .last_arrow {
+        content: url('../../common/images/mo_double_right_arrow.png');
+    }
+    /* detail date wrapper */
+    .detail_date_wrapper {
+        display: block;
+        padding: 15px 25px;
+    }
+    .detail_body_test .body_test_schedule,
+    .detail_date .detail_date_info {
+        width: 100%;
+    }
+    .hospital_wrapper {
+        padding: initial;
+        text-align: center;
+    }
+    .volunteer_list_wrapper {
+        flex-direction: column;
+    }
+    .healthy_detail .hospital_title_wrapper {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .healthy_detail .healthy_hospital {
+        margin-bottom: 10px;
+    }
+    .healthy_detail .date .age {
+        margin-top: 10px;
+    }
+    .healthy_detail .date .age::before {
+        left: 100px;
+    }
+    .apply_button {
+        margin: 25px 25px 15px;
+    }
+    .apply_button button {
+        font-size: 13px;
+        padding: 10px 0;
+    }
+    .detail_body_test .body_test_title,
+    .detail_date .detail_date_title {
+        font-size: 15px;
+        padding: 0 0 15px;
+    }
+    .detail_body_test .body_test_schedule p,
+    .detail_date .detail_date_info p {
+        font-size: 12px;
+    }
+    .detail_body_test,
+    .detail_date {
+        margin-bottom: 15px;
+    }
+    .healthy_info {
+        padding: 20px 0;
+    }
+    .healthy_info p {
+        font-size: 12px;
+    }
+    .download_wrapper {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+    .healthy_detail_wrapper .healthy_detail {
+        border-bottom: none;
+    }
+    .list_wrapper a {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    .apply_button.bottom {
+        margin: 20px 25px;
+    }
+    .apply_button.bottom button {
+        padding: 10px 113px;
+        width: 100%;
+        white-space: nowrap;
+    }
+}
+
+
+/* 반응형 360 */
+
+@media ( max-width: 360px) {
+    .healthy_detail_wrapper {
+        max-width: 320px;
+        margin-bottom: 0px;
+    }
+    .heathy_volunteer_title {
+        max-width: 320px;
+    }
+    .volunteer_btn_wrapper {
+        max-width: 320px;
+    }
+    .healthy_detail_wrapper .healthy_detail {}
+    .healthy_detail .hospital_title_wrapper .hospital_title {
+        display: inline-block;
+        width: 217px;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .healthy_detail .healthy_hospital span,
+    .healthy_detail .date,
+    .healthy_detail .date .age {
+        font-size: 11px;
+    }
+    .healthy_detail .healthy_hospital {
+        margin-bottom: 20px
+    }
+}
