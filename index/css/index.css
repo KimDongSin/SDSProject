@@ -119,7 +119,9 @@ a {
 
 
 .list_top {
-    padding: 20px 20px 0 20px ;
+    position: relative;
+    padding: 20px 20px 0 20px;
+    height: 296px;
 }
 
 .healthy_ul li .healthy_img {
@@ -162,11 +164,25 @@ a {
 
 .healthy_ul li .healthy_hospital {
     position: relative;
-    padding-bottom: 50px;
-    margin-bottom: 20px;
+    /* padding-bottom: 50px; */
 }
 
 .healthy_ul li .healthy_hospital:after {
+    content: '';
+    position: absolute;
+    bottom: -55px;
+    height: 1px;
+    border-bottom: 1px dashed #DEDEDE;
+    width: 111%;
+    left: -20px;
+}
+
+.list_top .tag_list {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+/* .list_top .tag_list:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -174,7 +190,24 @@ a {
     border-bottom: 1px dashed #DEDEDE;
     width: 111%;
     left: -20px;
+} */
+
+.list_top .tag_list .tag {
+    margin-top: 10px;
+    border: 1px solid #4466B2;
+    border-radius: 50px;
+    padding: 5px;
+    display: inline-block;
+    color: #4466B2;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 500;
 }
+
+.healthy_list.close  .list_top .tag_list .tag{
+    border: 1px solid #BEBEBE;
+}
+
 
 .healthy_ul li .healthy_hospital span {
     color: #8E8E8E;
@@ -186,6 +219,9 @@ a {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
 }
 
 .healthy_ul li .date_wrapper .date > span {
@@ -376,6 +412,27 @@ a {
     margin-bottom: 7px;
 }
 
+.recruit_ul li .tag_list {
+    margin-bottom: 10px;
+}
+
+.recruit_ul li .tag_list .tag {
+    margin-top: 10px;
+    border: 1px solid #4466B2;
+    border-radius: 50px;
+    padding: 5px;
+    display: inline-block;
+    color: #4466B2;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.recruit_ul li.close .tag_list .tag {
+    border: 1px solid #BEBEBE;
+    color: #BEBEBE;
+}
+
 .recruit_ul li .recruit_title_wrapper .recruit_category {
     display: inline-block;
     color: #FFFFFF;
@@ -397,7 +454,7 @@ a {
 
 .recruit_ul li .healthy_hospital {
     position: relative;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .recruit_ul li .healthy_hospital span {
@@ -877,6 +934,7 @@ a {
 .disease_selected .recruit_ul li .healthy_hospital {
     margin-bottom: 10px;
 }
+
 .disease_selected .recruit_ul li .date .age {
     margin-top: 10px;
 }
@@ -943,7 +1001,7 @@ a {
     }
 
     .healthy_ul li .healthy_hospital {
-        padding-bottom: 30px;
+        /* padding-bottom: 30px; */
     }
 
     .healthy_card_wrapper .healthy_ul li:last-child {
@@ -1025,6 +1083,18 @@ a {
         margin-top: 10px;
     }
 
+    .recruit_ul li .recruit_info {
+        height: 122px;
+    }
+
+    .recruit_ul li .recruit_info .tag_list .tag{
+        font-size: 10px;
+    }
+
+    .recruit_ul li .recruit_info .date {
+        position: absolute;
+        bottom: 12px;
+    }
 
     /* notice */
     .notice_wrapper {
@@ -1370,6 +1440,7 @@ a {
     
     .total_recruit_wrapper {
         margin-bottom: 0px;
+        max-width: initial;
     }
 
     .total_recruit {
@@ -1396,7 +1467,6 @@ a {
     }
 
     .recruit_ul li .healthy_hospital {
-        margin-bottom: 20px
     }
 
     .notice_wrapper {

@@ -1,78 +1,66 @@
-
-
-
 /* 반응형 425 */
-@media ( max-width: 425px )  {
 
+@media ( max-width: 425px) {
     .research {
         padding: 0 20px;
     }
-    
     .research .research_wrapper {
         height: 35px;
     }
-
-
     .research .research_wrapper div {
         height: 35px;
         line-height: 35px;
     }
-
     .research .research_wrapper div span {
         font-size: 12px;
     }
-
     .healthy_card_wrapper {
         max-width: 425px;
         padding: 0;
         margin: 0;
     }
-    
     .healthy_card_wrapper .healthy_ul {
         width: 385px;
         display: block;
         margin: 0 auto;
     }
-
-    .healthy_card_wrapper .healthy_ul li {
-    }
-
+    .healthy_card_wrapper .healthy_ul li {}
 }
 
 
 /* login css */
 
-.login{
+.login {
     height: 634px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.login__container{
+.login__container {
     width: 1200px;
-    height: 464px;
+    /* height: 464px; */
     border: 1px solid #BEBEBE;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 50px 0;
 }
 
-.login__container > h1{
+.login__container>h1 {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 31px;
 }
 
-.login__container__input{
+.login__container__input {
     width: 500px;
     display: flex;
     flex-direction: column;
-    
 }
 
-.login__container__input > input{
+.login__container__input>input {
     height: 60px;
     border: none;
     padding: 0 20px;
@@ -80,37 +68,38 @@
     background-color: #F0F0F0;
 }
 
-.login__container__input > *:nth-child(2){
+.login__container__input>*:nth-child(2) {
     margin: 30px 0;
 }
 
-.login__container__input > input::placeholder{
+.login__container__input>input::placeholder {
     color: #8E8E8E;
 }
 
-.login__container__input > input:last-child{
+.login__container__input>input:last-child {
     background-color: #0C1E46;
     height: 60px;
     color: #ffffff;
     font-size: 20px;
     border: none;
+    cursor: pointer;
 }
 
-.login__container__find{
+.login__container__find {
     margin-top: 25px;
 }
 
-.cotainer__find__box{
+.cotainer__find__box {
     display: flex;
     align-items: center;
     font-size: 16px;
 }
 
-.cotainer__find__box a{
+.cotainer__find__box a {
     color: #0C1E46;
 }
 
-.cotainer__find__box p{
+.cotainer__find__box p {
     width: 2px;
     height: 15px;
     background-color: #0C1E46;
@@ -119,68 +108,50 @@
 
 
 /* 반응형 425 */
-@media ( max-width: 425px )  {
-    .login__container{
+
+@media ( max-width: 425px) {
+    .login__container {
         border: none;
-        width: 375px;
+        width: 100%;
+        padding: 0;
+        justify-content: flex-start;
     }
-
-    .login__container__input{
-        width: 375px;
+    .login__container__input {
+        width: 89%;
     }
-
-    .login__container > h1{
+    .login__container>h1 {
         font-size: 17px;
-        margin-bottom: 20px;
+        margin: 50px 0;
     }
-
-    .login__container__input > input{
+    .login__container__input>input {
         height: 40px;
         font-size: 12px;
     }
-
-    .login__container__input > *:nth-child(2){
+    .login__container__input>*:nth-child(2) {
         margin: 5px 0 20px;
     }
-
-    .login__container__input > input:last-child{
+    .login__container__input>input:last-child {
         height: 40px;
         font-size: 14px;
     }
-
-    .login__container__find{
+    .login__container__find {
         margin-top: 20px;
     }
-
-    .cotainer__find__box{
+    .cotainer__find__box {
         font-size: 12px;
     }
-
-    .login{
+    .login {
         height: 410px;
+        align-items: flex-start;
     }
 }
+
 
 /* 반응형 360 */
-@media ( max-width: 360px )  {
-    .login__container{
-        border: none;
-        width: 320px;
-    }
 
-    .login__container__input{
-        width: 320px;
-    }
-}
+@media ( max-width: 360px) {}
+
 
 /* 반응형 320 */
-@media ( max-width: 320px )  {
-    .login__container{
-        border: none;
-        width: 280px;
-    }
 
-    .login__container__input{
-        width: 280px;
-    }
-}
+@media ( max-width: 320px) {}

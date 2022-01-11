@@ -338,7 +338,7 @@ a {
 .detail_body_test .body_test_schedule,
 .detail_date .detail_date_info {
     background: #fff;
-    height: 180px;
+    max-height: 180px;
     overflow: auto;
     width: 550px;
 }

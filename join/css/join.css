@@ -320,6 +320,7 @@
     margin: 0px 21px 0 22px;
     font-size: 25px !important;
     font-weight: 500;
+    line-height: 50px;
 }
 
 .form__information__email {
@@ -419,7 +420,16 @@
         display: block;
         margin: 0 auto;
     }
-    .healthy_card_wrapper .healthy_ul li {}
+    .information__birth__box>div {
+        width: 33%;
+    }
+    .information__birth__box>div>select {
+        width: 80%;
+        padding: 0 5px;
+    }
+    .information__birth__box>div>span {
+        width: 20%;
+    }
 }
 
 
@@ -432,13 +442,13 @@
 
 @media ( max-width: 425px) {
     .join {
-        height: 1675px;
+        height: initial;
     }
     .join__bottom>h1 {
         font-size: 17px;
     }
     .join__container {
-        width: 375px;
+        width: 89%;
     }
     .bottom__form__information {
         width: 100%;
@@ -447,6 +457,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
     }
     .form__information__input>span {
         width: 100%;
@@ -468,6 +479,7 @@
         padding: 10px;
     }
     .join__container>h1 {
+        margin: 50px 0;
         font-size: 17px;
     }
     .container__terms__ch input {
@@ -495,9 +507,14 @@
         height: 35px;
         font-size: 12px;
     }
+    .information__id__right {
+        width: 100%;
+    }
     .bottom__form__information>p {
+        text-align: left;
         font-size: 11px;
-        margin: 5px 0 15px -10px;
+        margin: 5px 0 15px;
+        line-height: 16px;
     }
     .form__information__area span {
         width: 100%;
@@ -507,6 +524,10 @@
     }
     .form__information__area {
         margin: 15px 0;
+    }
+    .information__area__list {
+        display: flex;
+        width: 100%;
     }
     .form__information__area select {
         width: 177px;
@@ -520,10 +541,21 @@
         font-size: 14px;
         margin: 0;
     }
+    .information__birth__box {
+        width: 100%;
+    }
     .information__birth__box select {
-        width: 96px;
+        padding: 0px;
+        width: initial;
         height: 35px;
         font-size: 12px;
+    }
+    .birth__box__year,
+    .birth__box__month,
+    .birth__box__work {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .form__information__gender {
         margin: 15px 0;
@@ -552,8 +584,11 @@
         text-align: start;
         margin-bottom: 10px;
     }
+    .information__body__box {
+        width: 100%;
+    }
     .information__body__box input {
-        width: 150px;
+        width: 100%;
         height: 35px;
     }
     .body__box__cm span {
@@ -568,8 +603,12 @@
         text-align: start;
         margin-bottom: 10px;
     }
+    .information__contact__box {
+        width: 100%;
+        display: flex;
+    }
     .information__contact__box select {
-        width: 102px;
+        width: initial;
         font-size: 12px;
         height: 35px;
         padding: 0 15px;
@@ -581,6 +620,7 @@
     }
     .information__contact__box span {
         margin: 0 10px;
+        line-height: 30px;
     }
     .form__information__email>span {
         width: 100%;
@@ -602,6 +642,9 @@
     .information__email__box>span {
         font-size: 12px;
     }
+    .join__btn {
+        padding-top: 20px;
+    }
     .join__btn__one {
         width: 90px;
         height: 35px;
@@ -613,30 +656,35 @@
         font-size: 12px;
     }
     .form__information__contact {
+        width: 100%;
         margin: 15px 0;
     }
     .birth__box__work select {
-        margin-right: 6px;
+        margin-right: 7px;
     }
     .birth__box__year span {
-        margin-left: 7px;
-        margin-right: 10px;
+        margin-left: 5px;
+        margin-right: 7px;
     }
     .birth__box__month span {
-        margin-left: 11px;
-        margin-right: 13px;
+        margin-left: 5px;
+        margin-right: 7px;
     }
     .information__birth__box {
         margin-top: 10px;
+        justify-content: space-between;
     }
     .information__contact__box input {
-        width: 107px;
+        width: 100%;
+    }
+    .information__email__box {
+        width: 100%;
     }
     .information__email__box>span {
         margin: 0 10px;
     }
     .information__email__box input {
-        width: 113px;
+        width: 100%;
     }
 }
 
@@ -733,7 +781,6 @@
         width: 77px;
         height: 35px;
         font-size: 12px;
-        padding: 0 10px;
     }
     .form__information__gender {
         margin: 15px 0;
@@ -920,7 +967,6 @@
         width: 70px;
         height: 35px;
         font-size: 12px;
-        padding: 0 10px;
     }
     .form__information__gender {
         margin: 15px 0;
@@ -1020,8 +1066,5 @@
     .information__birth__box {
         width: 100%;
         justify-content: space-between;
-    }
-    .information__birth__box select {
-        margin-right: 5px;
     }
 }
