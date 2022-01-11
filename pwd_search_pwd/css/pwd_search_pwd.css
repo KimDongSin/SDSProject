@@ -62,7 +62,6 @@
     color: #ffffff;
     font-size: 20px;
     margin-top: 30px;
-    cursor: pointer;
 }
 
 .container__left__form>input::placeholder {

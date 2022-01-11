@@ -1,17 +1,14 @@
 /*  */
-
 * {
-    font-family: 'Noto Sans KR';
+    font-family: 'Noto Sans CJK KR';
 }
-
 a {
     text-decoration: none;
 }
 
-
 /*navTwo*/
 
-.navTwo {
+.navTwo{
     width: 100%;
     height: 90px;
     background-color: #ffffff;
@@ -20,30 +17,29 @@ a {
     border-bottom: 1px solid #BEBEBE;
 }
 
-.navTwo__container {
+.navTwo__container{
     width: 1200px;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.navTwo__container__home {
+.navTwo__container__home{
     width: 90px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.navTwo__container>*:not(:last-child) {
+.navTwo__container > *:not(:last-child){
     border-left: 1px solid #BEBEBE;
 }
 
-.navTwo__container>*:not(:first-child) {
+.navTwo__container > *:not(:first-child){
     border-right: 1px solid #BEBEBE;
 }
 
-.navTwo__container__recruitment {
+.navTwo__container__recruitment{
     width: 300px;
     height: 100%;
     font-size: 22px;
@@ -52,7 +48,7 @@ a {
     padding-left: 31px;
 }
 
-.navTwo__container__list {
+.navTwo__container__list{
     width: 350px;
     height: 100%;
     display: flex;
@@ -65,7 +61,7 @@ a {
     box-sizing: border-box;
 }
 
-.navTwo__li {
+.navTwo__li{
     box-sizing: border-box;
     background-color: #ffffff;
     width: 351px;
@@ -78,16 +74,14 @@ a {
     z-index: -1;
 }
 
-.navTwo__container__list:hover .navTwo__li {
+.navTwo__container__list:hover .navTwo__li{
     transition-duration: .5s;
     visibility: visible;
     opacity: 1;
     z-index: 1;
 }
 
-
 /* location */
-
 .location_title {
     max-width: 1200px;
     margin: 50px auto;
@@ -105,7 +99,7 @@ a {
     line-height: 90px;
 }
 
-.li__box__column {
+.li__box__column{
     width: 100%;
     height: 70px;
     padding-left: 30px;
@@ -117,24 +111,24 @@ a {
     background: #fff;
 }
 
-.li__box__column a {
+.li__box__column a{
     color: #A1A1A1;
 }
 
-.navTwo__li__box .li__box__column:hover {
+.navTwo__li__box .li__box__column:hover{
     background-color: #F0F0F0;
     transition: 0.2s;
+
 }
 
 
 /* google map */
-
 .google_map_wrapper {
     max-width: 1200px;
     margin: 0 auto 50px;
 }
 
-.google_map_wrapper img {
+.google_map_wrapper img{
     width: 1200px;
     height: 400px;
     object-fit: cover;
@@ -142,10 +136,10 @@ a {
 
 
 /* addr info */
-
 .addr_info_wrapper {
     max-width: 1200px;
     margin: 0 auto 100px;
+
     display: flex;
     justify-content: left;
     align-items: center;
@@ -169,7 +163,7 @@ a {
 }
 
 .tel_info .tel_title span,
-.addr_info .addr_title span {
+.addr_info .addr_title span { 
     font-size: 18px;
     font-weight: 500;
 }
@@ -177,87 +171,103 @@ a {
 .tel_info .tel,
 .addr_info .addr {
     padding: 15px 25px;
-}
 
+}
 .tel_info .tel span,
 .addr_info .addr span {
     font-size: 20px;
     font-weight: 500;
+
     color: #8E8E8E;
 }
 
 
 /* 반응형 425 */
-
-@media ( max-width: 425px) {
+@media ( max-width: 425px )  {
     /* location */
     .location_title {
         max-width: 89%;
         margin: 20px auto;
     }
+
     .location_title span {
         height: 45px;
         line-height: 45px;
         font-size: 16px;
     }
-    /* 네비바2 */
-    .navTwo__container {
+
+     /* 네비바2 */
+
+     .navTwo__container{
         width: 100%;
     }
-    .navTwo__container__home {
+
+    .navTwo__container__home{
         display: none;
     }
-    .navTwo {
+
+    .navTwo{
         height: 35px;
     }
-    .navTwo__container__recruitment {
+
+    .navTwo__container__recruitment{
         font-size: 11px;
     }
-    .navTwo__container__list {
+
+    .navTwo__container__list{
         font-size: 11px;
     }
-    .navTwo__container__list img {
+
+    .navTwo__container__list img{
         width: 8px;
         height: 5px;
     }
-    .navTwo__li {
+
+    .navTwo__li{
         top: 35px;
         height: 92px;
         width: 100%;
         border-right: none;
     }
-    .li__box__column {
+
+    .li__box__column{
         height: 30px;
         font-size: 10px;
     }
-    .navTwo__container>*:not(:first-child),
-    .navTwo__container>*:not(:last-child) {
+
+    .navTwo__container > *:not(:first-child),.navTwo__container > *:not(:last-child){
         border: none;
     }
-    .navTwo__container .navTwo__container__recruitment {
+
+    .navTwo__container .navTwo__container__recruitment{
         border-right: 1px solid #BEBEBE;
     }
+
     /* map */
     .google_map_wrapper {
         max-width: 89%;
         margin-bottom: 20px;
     }
+
     .google_map_wrapper img {
         width: 100%;
         height: 200px;
         object-fit: cover;
         content: url('../../common/images/mo_map.png');
     }
+
     /* addr info */
     .addr_info_wrapper {
         width: 89%;
         display: block;
         margin-bottom: 40px;
     }
+    
     .addr_info {
         margin-right: 0;
     }
-    .tel_info .tel_title,
+
+    .tel_info .tel_title, 
     .addr_info .addr_title {
         width: 100px;
         padding: 0;
@@ -265,33 +275,38 @@ a {
         line-height: 40px;
         text-align: center;
     }
-    .tel_info .tel_title span,
+
+    .tel_info .tel_title span, 
     .addr_info .addr_title span,
-    .tel_info .tel span,
+    .tel_info .tel span, 
     .addr_info .addr span {
         font-size: 12px;
         color: #000;
     }
-    .tel_info .tel,
+    .tel_info .tel, 
     .addr_info .addr {
         padding: 15px;
     }
+
 }
 
 
-/* 반응형 360 */
 
-@media ( max-width: 360px) {
+/* 반응형 360 */
+@media ( max-width: 360px )  {
     .location_title {
         max-width: 320px;
     }
+
     /* map */
     .google_map_wrapper {
         max-width: 320px;
     }
+
     .google_map_wrapper img {
         width: 320px;
     }
+
     .addr_info_wrapper {
         max-width: 320px;
     }

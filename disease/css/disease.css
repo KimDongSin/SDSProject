@@ -1,9 +1,7 @@
 /*  */
-
 * {
-    font-family: 'Noto Sans KR';
+    font-family: 'Noto Sans CJK KR';
 }
-
 a {
     text-decoration: none;
 }
@@ -11,7 +9,7 @@ a {
 
 /*navTwo*/
 
-.navTwo {
+.navTwo{
     width: 100%;
     height: 90px;
     background-color: #ffffff;
@@ -20,30 +18,29 @@ a {
     border-bottom: 1px solid #BEBEBE;
 }
 
-.navTwo__container {
+.navTwo__container{
     width: 1200px;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.navTwo__container__home {
+.navTwo__container__home{
     width: 90px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.navTwo__container>*:not(:last-child) {
+.navTwo__container > *:not(:last-child){
     border-left: 1px solid #BEBEBE;
 }
 
-.navTwo__container>*:not(:first-child) {
+.navTwo__container > *:not(:first-child){
     border-right: 1px solid #BEBEBE;
 }
 
-.navTwo__container__recruitment {
+.navTwo__container__recruitment{
     width: 300px;
     height: 100%;
     font-size: 22px;
@@ -52,7 +49,7 @@ a {
     padding-left: 31px;
 }
 
-.navTwo__container__list {
+.navTwo__container__list{
     width: 350px;
     height: 100%;
     display: flex;
@@ -65,7 +62,7 @@ a {
     box-sizing: border-box;
 }
 
-.navTwo__li {
+.navTwo__li{
     box-sizing: border-box;
     background-color: #ffffff;
     width: 351px;
@@ -78,14 +75,14 @@ a {
     z-index: -1;
 }
 
-.navTwo__container__list:hover .navTwo__li {
+.navTwo__container__list:hover .navTwo__li{
     transition-duration: .5s;
     visibility: visible;
     opacity: 1;
     z-index: 1;
 }
 
-.li__box__column {
+.li__box__column{
     width: 100%;
     height: 70px;
     padding-left: 30px;
@@ -97,24 +94,25 @@ a {
     background: #fff;
 }
 
-.li__box__column a {
+.li__box__column a{
     color: #A1A1A1;
 }
 
-.navTwo__li__box .li__box__column:hover {
+.navTwo__li__box .li__box__column:hover{
     background-color: #F0F0F0;
     transition: 0.2s;
+
 }
 
 
 /* disease check */
-
 .disease_check {
     max-width: 1200px;
     margin: 0 auto;
     border: 1px solid #BEBEBE;
     box-shadow: 0px 1px 6px #0000001F;
     margin-bottom: 50px;
+
 }
 
 .disease_check .check_title {
@@ -138,7 +136,9 @@ a {
     background: #fff;
 }
 
-.check_ul {}
+.check_ul {
+
+}
 
 .check_ul li {
     margin: 0 50px;
@@ -165,6 +165,7 @@ a {
     display: none;
 }
 
+
 .chk_item {
     display: flex;
     justify-content: center;
@@ -175,15 +176,18 @@ a {
     margin-right: 20px;
 }
 
-.chk_item .item input {}
+.chk_item .item input{
 
-.chk_item .item label {
+}
+
+.chk_item .item label{
     color: #707070;
     font-size: 18px;
 }
 
 .check_button {
     padding: 20px 50px;
+    
 }
 
 .check_button button {
@@ -200,8 +204,9 @@ a {
 }
 
 
-/* total recruit */
 
+
+/* total recruit */
 .heathy_volunteer_title {
     max-width: 1200px;
     margin: 50px auto;
@@ -220,25 +225,26 @@ a {
 }
 
 
-/* volunteer button */
 
+/* volunteer button */
 .volunteer_btn_wrapper {
     max-width: 1200px;
     margin: 0 auto 20px;
+
     display: flex;
     justify-content: right;
     align-items: center;
 }
 
-.volunteer_btn_wrapper>div {
+.volunteer_btn_wrapper > div {
     margin-right: 20px;
 }
 
-.volunteer_btn_wrapper>div button.active {
+.volunteer_btn_wrapper > div button.active {
     color: #0C1E46;
 }
 
-.volunteer_btn_wrapper>div button {
+.volunteer_btn_wrapper > div button{
     display: block;
     background: #fff;
     padding: 0;
@@ -249,19 +255,16 @@ a {
     font-weight: bold;
 }
 
-.volunteer_btn_wrapper>.clinical_btn {
+.volunteer_btn_wrapper > .clinical_btn {
     margin-right: 0;
 }
 
-
 /* total recruit list */
-
 .heathy_volunteer_wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 20px;
 }
-
 .heathy_volunteer_wrapper .volunteer_ul {
     border-top: 1px solid #BEBEBE;
     border-bottom: 1px solid #BEBEBE;
@@ -278,16 +281,14 @@ a {
 }
 
 .heathy_volunteer_wrapper .volunteer_ul li:hover {
-    background: #F5F7FB
+    background: #F5F7FB 
 }
 
 
 /* 마감 */
-
 .heathy_volunteer_wrapper .volunteer_ul li.close:hover {
     background: #F9F9F9;
 }
-
 .volunteer_ul li.close .hospital_title_wrapper .hospital_category,
 .volunteer_ul li.close .volunteer_list_wrapper .hospital_state .state_box {
     background: #BEBEBE;
@@ -310,13 +311,11 @@ a {
 .volunteer_ul li.close .date .age::before {
     content: url('../../common/images/people_icon_close.png');
 }
-
-
 /*  */
 
 
-/* 마감임박 */
 
+/* 마감임박 */
 .heathy_volunteer_wrapper .volunteer_ul li.almost:hover {
     background: #FCF3F3;
 }
@@ -324,8 +323,6 @@ a {
 .volunteer_ul li.almost .volunteer_list_wrapper .hospital_state .state_box {
     background: #C82020;
 }
-
-
 /*  */
 
 .volunteer_list_wrapper {
@@ -344,7 +341,9 @@ a {
     background: #fff;
 }
 
-.volunteer_list_wrapper .hospital_logo img {}
+.volunteer_list_wrapper .hospital_logo img {
+
+}
 
 .volunteer_ul li .hospital_title_wrapper {
     margin-bottom: 7px;
@@ -379,12 +378,12 @@ a {
     font-size: 14px;
 }
 
-.volunteer_ul li .date {
+.volunteer_ul li .date{
     color: #000;
     font-size: 13px;
 }
 
-.volunteer_ul li .date span {
+.volunteer_ul li .date span { 
     display: block;
 }
 
@@ -411,7 +410,9 @@ a {
     right: 0;
 }
 
-.volunteer_ul li .volunteer_list_wrapper .hospital_state {}
+.volunteer_ul li .volunteer_list_wrapper .hospital_state {
+    
+}
 
 .volunteer_ul li .volunteer_list_wrapper .hospital_state .hospital_state_wrapper {
     display: flex;
@@ -438,7 +439,7 @@ a {
     align-items: center;
 }
 
-.volunteer_ul li .volunteer_list_wrapper .hospital_state .state_box span {
+.volunteer_ul li .volunteer_list_wrapper .hospital_state .state_box span{
     color: #fff;
     font-size: 20px;
 }
@@ -450,7 +451,6 @@ a {
 
 
 /* no result */
-
 .no_result {
     margin: 35px 0;
 }
@@ -462,17 +462,18 @@ a {
 }
 
 
-/* volunteer arrow wrapper */
 
+/* volunteer arrow wrapper */
 .volunteer_arrow_wrapper {
     max-width: 1200px;
     margin: 50px auto 100px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.volunteer_arrow_wrapper>ul,
+.volunteer_arrow_wrapper > ul,
 .prev_wrapper,
 .next_wrapper {
     display: flex;
@@ -480,21 +481,21 @@ a {
     align-items: center;
 }
 
-.volunteer_arrow_wrapper>ul {
+.volunteer_arrow_wrapper > ul {
     padding: 0 20px;
     margin-bottom: 3px;
 }
 
-.volunteer_arrow_wrapper>ul>li {
+.volunteer_arrow_wrapper > ul > li {
     padding: 0 10px;
 }
 
-.volunteer_arrow_wrapper>ul>li>span {
+.volunteer_arrow_wrapper > ul > li > span {
     font-size: 19px;
     color: #8E8E8E;
 }
 
-.volunteer_arrow_wrapper>ul>li>span.selected {
+.volunteer_arrow_wrapper > ul > li > span.selected {
     color: #0C1E46;
 }
 
@@ -506,146 +507,184 @@ a {
     margin-left: 6px;
 }
 
-.volunteer_arrow_wrapper>ul>li>span,
-.prev_wrapper>div,
-.next_wrapper>div {
+.volunteer_arrow_wrapper > ul > li > span,
+.prev_wrapper > div,
+.next_wrapper > div {
     cursor: pointer;
 }
 
 
-/* 반응형 425 */
 
-@media ( max-width: 425px) {
+/* 반응형 425 */
+@media ( max-width: 425px )  {
     /* 네비바2 */
-    .navTwo__container {
+
+    .navTwo__container{
         width: 100%;
     }
-    .navTwo__container__home {
+
+    .navTwo__container__home{
         display: none;
     }
-    .navTwo {
+
+    .navTwo{
         height: 35px;
     }
-    .navTwo__container__recruitment {
+
+    .navTwo__container__recruitment{
         font-size: 11px;
     }
-    .navTwo__container__list {
+
+    .navTwo__container__list{
         font-size: 11px;
     }
-    .navTwo__container__list img {
+
+    .navTwo__container__list img{
         width: 8px;
         height: 5px;
     }
-    .navTwo__li {
+
+    .navTwo__li{
         top: 35px;
         height: 62px;
         width: 100%;
         border-right: none;
     }
-    .li__box__column {
+
+    .li__box__column{
         height: 30px;
         font-size: 10px;
     }
-    .navTwo__container>*:not(:first-child),
-    .navTwo__container>*:not(:last-child) {
+
+    .navTwo__container > *:not(:first-child),.navTwo__container > *:not(:last-child){
         border: none;
     }
-    .navTwo__container .navTwo__container__recruitment {
+
+    .navTwo__container .navTwo__container__recruitment{
         border-right: 1px solid #BEBEBE;
     }
+
+
+
     /* disease check */
     .disease_check {
         max-width: 89%;
         margin-top: 20px;
     }
+
     .disease_check .check_title span {
         font-size: 13px;
     }
-    .disease_check .check_title img {
+    .disease_check .check_title img{
         vertical-align: middle;
     }
+
     .check_list_info {
         display: block;
         height: inherit;
     }
+
     .check_list_info .chk_item_title {
         width: inherit;
         margin: 10px 0;
     }
+
     .check_ul li {
         margin: 0 15px;
     }
+
     .chk_item {
         justify-content: left;
         margin-bottom: 10px;
         flex-wrap: wrap;
     }
+
     .chk_item .item {
         margin-right: 10px;
     }
+
     .check_list_info .chk_item_title span,
     .chk_item .item label {
         font-size: 12px;
     }
+
     .check_button {
         padding: 20px 15px;
     }
+
     .check_button button {
         height: 40px;
         line-height: 40px;
         font-size: 13px;
     }
+
+
     /* total recruit */
     .heathy_volunteer_title {
         max-width: 89%;
         margin: 20px auto;
     }
+
     .heathy_volunteer_title span {
         height: 45px;
         line-height: 45px;
         font-size: 16px;
     }
+
     .volunteer_btn_wrapper {
         max-width: 89%;
     }
-    .volunteer_btn_wrapper>div {
+
+    .volunteer_btn_wrapper > div {
         margin-right: 10px;
     }
-    .volunteer_btn_wrapper>div button {
+
+    .volunteer_btn_wrapper > div button {
         font-size: 14px;
     }
+
     .no_result span {
         font-size: 13px;
     }
+
     /* heathy_volunteer_wrapper */
     .heathy_volunteer_wrapper {
         max-width: 89%;
         margin: 20px auto;
     }
+
     .volunteer_list_wrapper .hospital_logo {
         display: none;
     }
+
     .heathy_volunteer_wrapper .volunteer_ul li {
         border: 1px solid #4466B2;
         margin-bottom: 10px;
     }
+
     .heathy_volunteer_wrapper .volunteer_ul li.close {
         border: 1px solid #BEBEBE;
     }
+
     .heathy_volunteer_wrapper .volunteer_ul li.almost {
         border: 1px solid #C82020;
     }
+
     .volunteer_ul li .volunteer_list_wrapper .hospital_state {
         width: 86px;
         height: 35px;
         bottom: 15px;
     }
+     
     .volunteer_ul li .volunteer_list_wrapper .hospital_state .hospital_state_wrapper {
         margin-bottom: 5px;
     }
+
     .volunteer_ul li .volunteer_list_wrapper .hospital_state .hospital_state_wrapper span {
         font-size: 11px;
     }
+
+
     .volunteer_ul li .volunteer_list_wrapper .hospital_state .state_box {
         width: 100%;
         height: 100%;
@@ -653,61 +692,86 @@ a {
     .volunteer_ul li .volunteer_list_wrapper .hospital_state .state_box span {
         font-size: 10px;
     }
-    .volunteer_ul li .volunteer_list_wrapper .hospital_state .state_box .arrow img {
+
+    .volunteer_ul li .volunteer_list_wrapper .hospital_state .state_box .arrow img{
         content: url('../../common/images/mobile_arrow.png');
     }
+
+
+
     .volunteer_arrow_wrapper {
         margin: 0 auto 20px;
     }
-    .volunteer_arrow_wrapper>ul {
+
+    .volunteer_arrow_wrapper > ul {
         padding: 0 12px;
     }
-    .volunteer_arrow_wrapper>ul>li {
+    
+    .volunteer_arrow_wrapper > ul > li {
         padding: 0 8px;
     }
-    .volunteer_arrow_wrapper>ul>li>span {
+
+    .volunteer_arrow_wrapper > ul > li > span {
         font-size: 13px;
         line-height: 19px;
     }
+
     .prev_wrapper .first_arrow {
         margin-right: 5px;
     }
+    
     .next_wrapper .last_arrow {
         margin-left: 5px;
     }
-    .first_arrow {
+
+    .first_arrow{
         content: url('../../common/images/mo_double_left_arrow.png');
     }
-    .prev_arrow {
+
+    .prev_arrow{
         content: url('../../common/images/mo_left_arrow.png');
     }
-    .next_arrow {
+
+    .next_arrow{
         content: url('../../common/images/mo_right_arrow.png');
     }
-    .last_arrow {
+
+    .last_arrow{
         content: url('../../common/images/mo_double_right_arrow.png');
     }
+
+
+
 }
 
 
-/* 반응형 360 */
 
-@media ( max-width: 360px) {
+/* 반응형 360 */
+@media ( max-width: 360px )  {
     .disease_check,
     .disease_selected {
         max-width: 320px;
     }
+
+
+
     .heathy_volunteer_wrapper {
         max-width: 320px;
+
         margin-bottom: 0px;
     }
+
     .heathy_volunteer_title {
         max-width: 320px;
     }
+
     .volunteer_btn_wrapper {
         max-width: 320px;
     }
-    .heathy_volunteer_wrapper .volunteer_ul li {}
+
+    .heathy_volunteer_wrapper .volunteer_ul li {
+    }
+
     .volunteer_ul li .hospital_title_wrapper .hospital_title {
         display: inline-block;
         width: 217px;
@@ -716,12 +780,16 @@ a {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
     .volunteer_ul li .healthy_hospital span,
     .volunteer_ul li .date,
     .volunteer_ul li .date .age {
         font-size: 11px;
     }
+
     .volunteer_ul li .healthy_hospital {
         margin-bottom: 20px
     }
+
+
 }

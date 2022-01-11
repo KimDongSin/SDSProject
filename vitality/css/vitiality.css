@@ -1,133 +1,139 @@
+/*  */
 * {
-    font-family: 'Noto Sans KR';
+    font-family: 'Noto Sans CJK KR';
 }
-
 a {
     text-decoration: none;
 }
 
-.navTwo {
-    background-color: #ffffff;
-    border-bottom: 1px solid #BEBEBE;
-    display: flex;
-    height: 90px;
-    justify-content: center;
+/*navTwo*/
+
+.navTwo{
     width: 100%;
-}
-
-.navTwo__container {
-    align-items: center;
+    height: 90px;
+    background-color: #ffffff;
     display: flex;
-    height: 100%;
-    width: 1200px;
-}
-
-.navTwo__container__home {
-    align-items: center;
-    display: flex;
-    height: 100%;
     justify-content: center;
-    width: 90px;
+    border-bottom: 1px solid #BEBEBE;
 }
 
-.navTwo__container>*:not(:last-child) {
+.navTwo__container{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navTwo__container__home{
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navTwo__container > *:not(:last-child){
     border-left: 1px solid #BEBEBE;
 }
 
-.navTwo__container>*:not(:first-child) {
+.navTwo__container > *:not(:first-child){
     border-right: 1px solid #BEBEBE;
 }
 
-.navTwo__container__recruitment {
-    align-items: center;
-    display: flex;
-    font-size: 22px;
-    height: 100%;
-    padding-left: 31px;
+.navTwo__container__recruitment{
     width: 300px;
+    height: 100%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 31px;
 }
 
-.navTwo__container__list {
-    align-items: center;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: flex;
-    font-size: 22px;
+.navTwo__container__list{
+    width: 350px;
     height: 100%;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+    font-size: 22px;
+    cursor: pointer;
     position: relative;
-    width: 350px;
+    box-sizing: border-box;
 }
 
-.navTwo__li {
-    background-color: #ffffff;
-    border: 1px solid #BEBEBE;
+.navTwo__li{
     box-sizing: border-box;
+    background-color: #ffffff;
+    width: 351px;
     height: 212px;
-    left: -1px;
-    opacity: 0;
     position: absolute;
     top: 90px;
-    width: 351px;
+    left: -1px;
+    border: 1px solid #BEBEBE;
+    opacity: 0;
     z-index: -1;
 }
 
-.navTwo__container__list:hover .navTwo__li {
-    opacity: 1;
+.navTwo__container__list:hover .navTwo__li{
     transition-duration: .5s;
     visibility: visible;
+    opacity: 1;
     z-index: 1;
 }
 
-.li__box__column {
-    align-items: center;
-    background: #fff;
-    box-sizing: border-box;
-    display: flex;
-    font-size: 18px;
+.li__box__column{
+    width: 100%;
     height: 70px;
     padding-left: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
     transition: 0.2s;
-    width: 100%;
+    font-size: 18px;
+    background: #fff;
 }
 
-.li__box__column a {
+.li__box__column a{
     color: #A1A1A1;
 }
 
-.navTwo__li__box .li__box__column:hover {
+.navTwo__li__box .li__box__column:hover{
     background-color: #F0F0F0;
     transition: 0.2s;
+
 }
 
+
+/* vitialit title */
 .vitiality_title {
-    margin: 50px auto;
     max-width: 1200px;
+    margin: 50px auto;
 }
 
 .vitiality_title span {
+    display: block;
+    width: 100%;
+    height: 90px;
     background: #0C1E46;
     color: #fff;
-    display: block;
     font-size: 30px;
     font-weight: 500;
-    height: 90px;
-    line-height: 90px;
     text-align: center;
-    width: 100%;
+    line-height: 90px;
 }
 
+
+/* vitiality definition */
 .vitiality_definition_wrapper {
-    margin: 0 auto 50px;
     max-width: 1200px;
+    margin: 0 auto 50px;
 }
 
 .schedule_title,
 .definition_title {
-    align-items: center;
     display: flex;
     justify-content: left;
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -138,39 +144,47 @@ a {
 }
 
 .schedule_title span,
-.definition_title span {
+ .definition_title span{
     font-size: 25px;
+}
+
+.definition {
+    
 }
 
 .definition p {
     font-size: 20px;
-    line-height: 34px;
     padding: 0 25px;
+    line-height: 34px;
 }
 
+
+
+/* schedule */
 .vitiality_schedule_wrapper {
-    margin: 0 auto 50px;
     max-width: 1200px;
+    margin: 0 auto 50px;
     position: relative;
 }
+
 
 .vitiality_schedule {
     border: 1px solid #BEBEBE;
 }
 
 .step_wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 50px;
     margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .step_wrapper .step {
-    align-items: baseline;
+    margin-right: 50px;
     display: flex;
     justify-content: start;
-    margin-right: 50px;
+    align-items: baseline;
 }
 
 .step_wrapper .step:nth-of-type(1) {
@@ -181,17 +195,20 @@ a {
     width: 352px;
 }
 
-.step_wrapper .step:nth-of-type(3) {}
+.step_wrapper .step:nth-of-type(3) {
+}
+    
 
 .step_wrapper .step:last-child {
     margin-right: 0;
 }
 
 .step_wrapper .step span.num {
+    margin-right: 30px;
     color: #4466B2;
     font-size: 25px;
     font-weight: bold;
-    margin-right: 30px;
+
 }
 
 .step_wrapper .step span {
@@ -199,24 +216,36 @@ a {
     line-height: 34px;
 }
 
+
+
+/* 
+.line {
+    position: absolute;
+    border-top: 1px solid #BEBEBE;
+    left: 25px;
+    right: 25px;
+};  */
+
+/* schedule card */
 .schedule_card_wrapper {
-    align-items: baseline;
-    background: #F5F7FB;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1200px;
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #F5F7FB;
+    
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .schedule_card {
-    align-items: flex-start;
+    width: 499px;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    align-items: flex-start;
     padding: 50px;
-    width: 499px;
+    margin-bottom: 50px;
 }
 
 .schedule_card img {
@@ -228,17 +257,21 @@ a {
     line-height: 37px;
 }
 
+
+
+/* schedule button */
 .schedule_btn_wrapper {
-    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 100px;
     display: flex;
     justify-content: center;
-    margin: 0 auto 100px;
-    max-width: 1200px;
+    align-items: center;
 }
 
+
 .schedule_btn_wrapper div {
-    height: 90px;
     width: 100%;
+    height: 90px;
 }
 
 .schedule_btn_wrapper div:first-child {
@@ -250,13 +283,13 @@ a {
 }
 
 .schedule_btn_wrapper div button {
-    border: none;
-    color: #fff;
-    cursor: pointer;
     font-size: 25px;
+    width: 100%;
     height: 90px;
     line-height: 90px;
-    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    border: none;
 }
 
 .schedule_btn_wrapper div .process_btn {
@@ -267,136 +300,193 @@ a {
     background: #012C8B;
 }
 
-@media ( max-width: 425px) {
+
+
+/* 반응형 425 */
+@media ( max-width: 425px )  {
+    /* vitality */
     .vitiality_title {
-        margin: 20px auto;
         max-width: 89%;
+        margin: 20px auto;
     }
+
     .vitiality_title span {
-        font-size: 16px;
         height: 45px;
         line-height: 45px;
+        font-size: 16px;
     }
-    .navTwo__container {
+
+     /* 네비바2 */
+
+     .navTwo__container{
         width: 100%;
     }
-    .navTwo__container__home {
+
+    .navTwo__container__home{
         display: none;
     }
-    .navTwo {
+
+    .navTwo{
         height: 35px;
     }
-    .navTwo__container__recruitment {
+
+    .navTwo__container__recruitment{
         font-size: 11px;
     }
-    .navTwo__container__list {
+
+    .navTwo__container__list{
         font-size: 11px;
     }
-    .navTwo__container__list img {
-        height: 5px;
+
+    .navTwo__container__list img{
         width: 8px;
+        height: 5px;
     }
-    .navTwo__li {
-        border-right: none;
-        height: 92px;
+
+    .navTwo__li{
         top: 35px;
+        height: 92px;
         width: 100%;
+        border-right: none;
     }
-    .li__box__column {
-        font-size: 10px;
+
+    .li__box__column{
         height: 30px;
+        font-size: 10px;
     }
-    .navTwo__container>*:not(:first-child),
-    .navTwo__container>*:not(:last-child) {
+
+    .navTwo__container > *:not(:first-child),.navTwo__container > *:not(:last-child){
         border: none;
     }
-    .navTwo__container .navTwo__container__recruitment {
+
+    .navTwo__container .navTwo__container__recruitment{
         border-right: 1px solid #BEBEBE;
     }
+
+
+
+
+
+
+    /* vitiality definition */
     .vitiality_definition_wrapper {
         max-width: 89%;
     }
-    .schedule_title,
+
+    .schedule_title, 
     .definition_title {
         margin-bottom: 10px;
     }
-    .schedule_title span,
+
+    .schedule_title span, 
     .definition_title span {
         font-size: 15px;
     }
+
     .definition p {
         font-size: 13px;
-        line-height: 21px;
         padding: 0 10px;
+        line-height: 21px;
     }
+
+
+
+    /* schedule */
     .vitiality_schedule_wrapper {
         max-width: 89%;
     }
+
     .step_wrapper {
         flex-wrap: wrap;
         justify-content: flex-start;
         margin-bottom: 0;
     }
+
     .step_wrapper .step {
+        margin-left: 20px;
+        width: 100% !important; 
         align-items: flex-start;
         margin-bottom: 20px;
-        margin-left: 20px;
-        width: 100% !important;
     }
+
     .step_wrapper .step span.num {
-        font-size: 20px;
         margin-right: 10px;
+        font-size: 20px;
     }
+
     .step_wrapper .step span {
         font-size: 13px;
         line-height: 21px;
     }
+
+    
+    
+    /* schedule button */
     .schedule_card_wrapper {
         padding: 20px;
     }
+
     .schedule_card {
         display: block;
+        width: initial;
         flex-wrap: wrap;
         margin-bottom: 20px;
         padding: 0;
         text-align: center;
-        width: initial;
     }
+
     .schedule_card img {
         margin: 0;
         margin-bottom: 35px;
     }
+
     .schedule_card p {
         font-size: 13px;
         line-height: 21px;
     }
+
+
+    /* schedule button */ 
     .schedule_btn_wrapper {
+        max-width: 89%;
         display: block;
         margin-bottom: 40px;
-        max-width: 89%;
     }
+
     .schedule_btn_wrapper div {
-        height: 50px;
         margin: 0 0 20px !important;
+        height: 50px;
     }
+
     .schedule_btn_wrapper div button {
-        font-size: 14px;
         height: 50px;
         line-height: 50px;
+        font-size: 14px;
     }
 }
 
-@media ( max-width: 360px) {
+
+
+/* 반응형 360 */
+@media ( max-width: 360px )  {
     .vitiality_title {
         max-width: 320px;
     }
+
+
+    /* vitiality definition */
     .vitiality_definition_wrapper {
         max-width: 320px;
     }
+
+    /* schedule */
     .vitiality_schedule_wrapper {
         max-width: 320px;
     }
+
+    /* schedule button */ 
     .schedule_btn_wrapper {
         max-width: 320px;
     }
+    
 }

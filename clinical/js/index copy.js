@@ -1,0 +1,88 @@
+// 배너 스와이프
+var bannerSwiper = new Swiper('.swiper-container', {
+	autoplay: {
+		delay: 2200,
+		disableOnInteraction: false,
+	},
+	loop: true,
+});
+
+// 탭
+const healthy = $(".tab");
+
+const leftTab = $('.volunteer_left_tab');
+const rightTab = $('.volunteer_right_tab');
+
+// 모바일
+const open = $('.mobile_menu');
+const close = $('.mobile_close');
+const mobile_bg = $('.mobile_bg');
+const nav_wrapper = $('.nav_wrapper');
+
+//본인 질환 선택
+const formToggle = $('.form_toggle');
+const checkTitle = $('.check_title');
+
+// 3단바 클릭
+open.on('click', function () {
+	mobile_bg.css({ 'opacity': '1', 'display': 'block' });
+	nav_wrapper.css({ 'right': '0px' });
+});
+
+// 닫기 클릭
+$(document).on('click', '.mobile_bg, .mobile_close', function () {
+	mobile_bg.css({ 'opacity': '0', 'display': 'none' });
+	nav_wrapper.css({ 'right': '-300px' });
+});
+
+// 탭 클릭
+healthy.on('click', function () {
+	
+	$(".tab").removeClass('selected');
+	$(this).addClass('selected');
+	if ($(this).hasClass('healthy')) {
+		leftTab.css({ 'display': 'block' });
+		rightTab.css({ 'display': 'none' });
+	} else {
+		leftTab.css({ 'display': 'none' });
+		rightTab.css({ 'display': 'block' });
+	}
+});
+
+// 본인 질환 선택 토글
+checkTitle.on('click', () => { formToggle.toggle() });
+
+// 하단 스와이프
+var hospitalSwiper = new Swiper('.swiper-container3', {
+	slidesPerView: 5,  // 보여지는 배너갯수
+	spaceBetween: 5,  // 배너 간 간격
+	loop: true,
+	autoplay: {
+		delay: 2200,
+		disableOnInteraction: false,
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
