@@ -1,4 +1,5 @@
 /*  */
+
 a {
     text-decoration: none;
 }
@@ -16,17 +17,17 @@ a {
 
 
 /* research */
+
 .research {
     max-width: 1200px;
     margin: 50px auto;
 }
 
-.research .research_wrapper{
-    display: flex;
+.research .research_wrapper {
+    display: none;
     justify-content: center;
     align-items: center;
     border: 1px solid #BEBEBE
-
 }
 
 .research .research_wrapper div {
@@ -46,15 +47,14 @@ a {
     cursor: pointer;
 }
 
-.research .research_wrapper div.selected
-.research .research_wrapper div span {
+.research .research_wrapper div.selected .research .research_wrapper div span {
     color: #AAAAAA;
     font-size: 18px;
 }
 
 
-
 /* healthy list */
+
 .healthy_card_wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -64,9 +64,8 @@ a {
 
 .healthy_card_wrapper .healthy_ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
-
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -75,22 +74,25 @@ a {
     border: 1px solid #4466B2;
     position: relative;
     margin-bottom: 30px;
+    margin-right: 25px;
 }
 
+.healthy_card_wrapper .healthy_ul li:nth-child(3n) {
+    margin-right: 0;
+}
 
 .healthy_card_wrapper .healthy_ul li.close {
     border: 1px solid #BEBEBE;
-
 }
 
 .healthy_card_wrapper .healthy_ul li.close span,
 .healthy_card_wrapper .healthy_ul li.close .due_date span,
-.healthy_card_wrapper .healthy_ul li.close .healthy_recruit{
+.healthy_card_wrapper .healthy_ul li.close .healthy_recruit {
     color: #BEBEBE;
 }
 
 .healthy_card_wrapper .healthy_ul li.close .healthy_recruit .recruit,
-.healthy_card_wrapper .healthy_ul li.close .healthy_category { 
+.healthy_card_wrapper .healthy_ul li.close .healthy_category {
     color: #fff;
 }
 
@@ -107,16 +109,13 @@ a {
     content: url('../../common/images/people_icon_close.png');
 }
 
-
 .healthy_card_wrapper .healthy_ul li.almost {
     border: 1px solid #C82020;
-
 }
 
 .healthy_ul li.almost .healthy_recruit {
     background: #C82020;
 }
-
 
 .list_top {
     position: relative;
@@ -182,15 +181,9 @@ a {
     padding-bottom: 20px;
 }
 
-/* .list_top .tag_list:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 1px;
-    border-bottom: 1px dashed #DEDEDE;
-    width: 111%;
-    left: -20px;
-} */
+.right_notice {
+    width: 585px;
+}
 
 .list_top .tag_list .tag {
     margin-top: 10px;
@@ -204,10 +197,9 @@ a {
     font-weight: 500;
 }
 
-.healthy_list.close  .list_top .tag_list .tag{
+.healthy_list.close .list_top .tag_list .tag {
     border: 1px solid #BEBEBE;
 }
-
 
 .healthy_ul li .healthy_hospital span {
     color: #8E8E8E;
@@ -222,9 +214,11 @@ a {
     margin-top: 20px;
     position: absolute;
     bottom: 0;
+    width: 89%;
+    margin-left: -1px;
 }
 
-.healthy_ul li .date_wrapper .date > span {
+.healthy_ul li .date_wrapper .date>span {
     display: block;
 }
 
@@ -303,8 +297,8 @@ a {
 }
 
 
-
 /* total recruit */
+
 .total_recruit {
     max-width: 1200px;
     margin: 50px auto;
@@ -323,8 +317,8 @@ a {
 }
 
 
-
 /* total recruit list */
+
 .total_recruit_wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -337,10 +331,11 @@ a {
     margin-bottom: 30px;
     padding: 20px;
     box-shadow: 0px 1px 6px #0000001F;
-
 }
 
+
 /* 마감 */
+
 .total_recruit_wrapper .recruit_ul li.close {
     border: 1px solid #BEBEBE;
 }
@@ -367,11 +362,13 @@ a {
 .recruit_ul li.close .date .age::before {
     content: url('../../common/images/people_icon_close.png');
 }
+
+
 /*  */
 
 
-
 /* 마감임박 */
+
 .total_recruit_wrapper .recruit_ul li.almost {
     border: 1px solid #C82020;
 }
@@ -385,9 +382,8 @@ a {
     transition-duration: .3s;
 }
 
+
 /*  */
-
-
 
 .recruit_list_wrapper {
     display: flex;
@@ -404,9 +400,7 @@ a {
     margin-right: 20px;
 }
 
-.recruit_list_wrapper .recruit_logo img {
-
-}
+.recruit_list_wrapper .recruit_logo img {}
 
 .recruit_ul li .recruit_title_wrapper {
     margin-bottom: 7px;
@@ -462,12 +456,12 @@ a {
     font-size: 14px;
 }
 
-.recruit_ul li .date{
+.recruit_ul li .date {
     color: #000;
     font-size: 13px;
 }
 
-.recruit_ul li .date span { 
+.recruit_ul li .date span {
     display: block;
 }
 
@@ -488,18 +482,13 @@ a {
     top: -1px;
 }
 
-
-
 .recruit_ul li .recruit_list_wrapper .recruit_state {
     position: absolute;
     bottom: 0;
     right: 0;
-    
 }
 
-.recruit_ul li .recruit_list_wrapper .recruit_state {
-    
-}
+.recruit_ul li .recruit_list_wrapper .recruit_state {}
 
 .recruit_ul li .recruit_list_wrapper .recruit_state .recruit_state_wrapper {
     display: flex;
@@ -526,12 +515,11 @@ a {
     align-items: center;
 }
 
-.recruit_ul li .recruit_list_wrapper .recruit_state .state_box:hover .recruit_arrow img:nth-child(1){
+.recruit_ul li .recruit_list_wrapper .recruit_state .state_box:hover .recruit_arrow img:nth-child(1) {
     opacity: 1;
 }
 
-
-.recruit_ul li .recruit_list_wrapper .recruit_state .state_box span{
+.recruit_ul li .recruit_list_wrapper .recruit_state .state_box span {
     color: #fff;
     font-size: 20px;
 }
@@ -542,8 +530,90 @@ a {
 }
 
 
+/* step */
+
+.left_notice {
+    width: 585px;
+    height: 100%;
+    margin-right: 30px;
+    border: 1px solid #BEBEBE;
+}
+
+.left_notice .step_wrapper {}
+
+.step_wrapper .step_title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 30px;
+}
+
+.step_wrapper .step_title img {
+    margin-right: 18px;
+    height: 15px;
+}
+
+.step_wrapper .step_title span {
+    width: 100%;
+    font-size: 23px;
+    display: inline-block;
+    position: relative;
+}
+
+.step_wrapper .step_title span::after {
+    content: url('../../common/images/plus.png');
+    position: absolute;
+    right: 0;
+    /* top: -3px; */
+    bottom: 0;
+    height: 13px;
+    transform: translateY(-100%);
+}
+
+.step_wrapper .step {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #BEBEBE;
+}
+
+.step .item {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.step .item:nth-child(2),
+.step .item:nth-child(3),
+.step .item:nth-child(6),
+.step .item:nth-child(7) {
+    background: #F2F4FA;
+}
+
+.item img {
+    display: block;
+    object-fit: cover;
+    margin: 0 auto 20px;
+}
+
+.item .num {
+    color: #4466B2;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.item .num>span {
+    color: #000;
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 
 /* notice */
+
 .notice_wrapper {
     max-width: 1200px;
     margin: 0px auto 100px;
@@ -558,7 +628,8 @@ a {
 
 .main_notice_card {
     border: 1px solid #BEBEBE;
-    margin-right: 30px;
+    /* margin-right: 30px; */
+    overflow: hidden;
 }
 
 .main_notice_card {
@@ -569,10 +640,16 @@ a {
     display: block;
 }
 
-.main_notice_card img{
-    width: 100%;
+.main_notice_card .notice_img {
+    width: 585px;
+    height: 202px;
 }
 
+.main_notice_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .main_notice_wrapper .notice_info {
     padding: 20px;
@@ -588,7 +665,6 @@ a {
     position: relative;
     padding-left: 42px;
     margin: 2px 0 44px;
-
     height: 32px;
     line-height: 32px;
     white-space: nowrap;
@@ -611,31 +687,50 @@ a {
     color: #8E8E8E;
 }
 
-.notice_list_wrapper {
+.right_notice .faq {
     max-width: 585px;
+    height: 518px;
+    margin-bottom: 31px;
+}
+
+.right_notice .main_notice_wrapper {
+    max-width: 585px;
+    margin-bottom: 30px;
+}
+
+.right_notice .notice_list_title {
+    font-size: 23px;
+    font-weight: 500;
+    height: 82px;
+    border: 1px solid #BEBEBE;
+    border-bottom: none;
     display: flex;
-    align-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 32px;
 }
 
-.notice_list_wrapper .notice_list_title {
-    display: none;
+.notice_list_title>img {
+    height: 15px;
+    margin-right: 23px;
 }
 
-.notice_list_wrapper .notice_list {
+.right_notice .notice_list {
     width: 100%;
 }
 
 .notice_list .notice_ul {
     border: 1px solid #BEBEBE;
     overflow: auto;
-    height: 220px;
+    height: 432px;
 }
 
 .notice_list .notice_ul li {
     position: relative;
     padding: 20px;
-    display: block;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 72px;
     border-bottom: 1px solid #BEBEBE;
 }
 
@@ -649,6 +744,7 @@ a {
     color: #000;
     padding-left: 47px;
 }
+
 .notice_list .notice_ul li span::before {
     position: absolute;
     top: 50%;
@@ -662,12 +758,12 @@ a {
     right: 20px;
 }
 
-.notice_list_wrapper .customer_center {
-    width: 100%;
-    height: 170px;
+.right_notice .customer_center {
+    height: 260px;
     border: 1px solid #BEBEBE;
     padding: 30px;
     position: relative;
+    box-sizing: border-box;
 }
 
 .customer_center_info {
@@ -682,23 +778,22 @@ a {
     left: -1px;
 }
 
-.customer_center_info > span {
+.customer_center_info>span {
     display: block;
     /* margin-bottom: 10px; */
 }
 
-.customer_center_info .center_title{
+.customer_center_info .center_title {
     font-size: 23px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.customer_center_info .center_tel{
+.customer_center_info .center_tel {
     font-size: 30px;
     font-weight: bold;
     color: #012C8B;
-    margin-bottom: 30px;
-
+    margin-bottom: 18px;
 }
 
 .customer_center_info .tel {
@@ -714,6 +809,10 @@ a {
     margin-bottom: 0px;
 }
 
+.center_break_time {
+    margin-top: 5px;
+}
+
 .customer_center_info .center_time {
     margin-bottom: 3px;
 }
@@ -725,7 +824,7 @@ a {
     transform: translateY(50%);
 }
 
-.customer_center_box > div {
+.customer_center_box>div {
     text-align: center;
     line-height: 50px;
 }
@@ -739,7 +838,7 @@ a {
     background: #4466B2;
 }
 
-.customer_center_box > div span {
+.customer_center_box>div span {
     display: block;
     width: 160px;
     height: 50px;
@@ -749,14 +848,16 @@ a {
 
 
 /* 크래프트블랙 티오티더블블랙 밀키스 코카콜라 파워에이드  */
+
+
 /* hospital swiper */
+
 .hospital_swiper_wrapper {
     width: 100%;
     border-top: 1px solid #BEBEBE;
-
 }
 
-.hospital_swiper_wrapper > div{
+.hospital_swiper_wrapper>div {
     max-width: 1200px;
     margin: 0px auto;
     overflow: hidden;
@@ -784,29 +885,28 @@ a {
 .arrow_wrapper .swiper-button-next {
     width: 20px;
     height: 17px;
-    background: url('../../common/images/arrow_right.png') no-repeat; 
+    background: url('../../common/images/arrow_right.png') no-repeat;
     z-index: 9;
 }
 
-.arrow_wrapper .swiper-button-prev{
+.arrow_wrapper .swiper-button-prev {
     width: 20px;
     height: 17px;
-    background: url('../../common/images/arrow_left.png') no-repeat; 
-    right: 28px; 
-    left: auto; 
+    background: url('../../common/images/arrow_left.png') no-repeat;
+    right: 28px;
+    left: auto;
     z-index: 9;
     bottom: 0;
 }
 
 
-
 /* disease check */
+
 .disease_check {
     max-width: 1200px;
     margin: 0 auto;
     border: 1px solid #BEBEBE;
     box-shadow: 0px 1px 6px #0000001F;
-
 }
 
 .disease_check .check_title {
@@ -830,9 +930,7 @@ a {
     background: #fff;
 }
 
-.check_ul {
-
-}
+.check_ul {}
 
 .check_ul li {
     margin: 0 50px;
@@ -859,7 +957,6 @@ a {
     display: none;
 }
 
-
 .chk_item {
     display: flex;
     justify-content: center;
@@ -870,18 +967,15 @@ a {
     margin-right: 20px;
 }
 
-.chk_item .item input{
+.chk_item .item input {}
 
-}
-
-.chk_item .item label{
+.chk_item .item label {
     color: #707070;
     font-size: 18px;
 }
 
 .check_button {
     padding: 20px 50px;
-    
 }
 
 .check_button button {
@@ -898,7 +992,6 @@ a {
 }
 
 
-
 /* disease selected */
 
 .disease_selected {
@@ -908,15 +1001,14 @@ a {
 .disease_selected_all {
     border-bottom: 1px solid #0C1E46;
     padding-bottom: 10px;
-
 }
 
-.disease_selected_all span{
+.disease_selected_all span {
     font-size: 20px;
     margin-left: 8px;
 }
 
-.disease_selected .total_recruit_wrapper{
+.disease_selected .total_recruit_wrapper {
     margin-top: 30px;
     padding: 0;
 }
@@ -942,9 +1034,9 @@ a {
 .disease_selected .total_recruit_wrapper .recruit_ul li:last-child {
     margin-bottom: 0;
 }
+
 .view_more {
     margin: 50px 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -961,54 +1053,43 @@ a {
 }
 
 
-
 /* 반응형 425 */
-@media ( max-width: 425px )  {
 
+@media ( max-width: 430px) {
     .research {
         padding: 0 20px;
         margin: 20px auto;
     }
-    
     .research .research_wrapper {
         height: 35px;
     }
-
-
     .research .research_wrapper div {
         height: 35px;
         line-height: 35px;
     }
-
     .research .research_wrapper div span {
         font-size: 12px;
     }
-
     .healthy_card_wrapper {
-        max-width: 100%;
+        max-width: 89%;
         padding: 0;
         margin: 0 auto;
     }
-    
     .healthy_card_wrapper .healthy_ul {
         max-width: 89%;
         display: block;
         margin: 0 auto;
     }
-
     .healthy_card_wrapper .healthy_ul li {
         margin-bottom: 10px;
+        margin-right: 0;
     }
-
     .healthy_ul li .healthy_hospital {
         /* padding-bottom: 30px; */
     }
-
     .healthy_card_wrapper .healthy_ul li:last-child {
         margin-bottom: 20px;
-
     }
-
     .healthy_ul li .healthy_title_wrapper .healthy_title {
         display: inline-block;
         font-size: 15px;
@@ -1017,56 +1098,44 @@ a {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-
     .healthy_ul li .healthy_title_wrapper .healthy_category {
         font-size: 11px;
         height: 21px;
         line-height: 21px;
     }
-
     /* total recruit */
     .total_recruit {
         max-width: 89%;
         margin: 20px auto;
     }
-
     .total_recruit span {
         height: 45px;
         line-height: 45px;
         font-size: 16px;
     }
-
-
-
     /* total_recruit_wrapper */
     .total_recruit_wrapper {
         max-width: 89%;
         margin: 20px auto;
     }
-
     .recruit_list_wrapper .recruit_logo {
         display: none;
     }
-
     .total_recruit_wrapper .recruit_ul li {
         padding: 12px 10px;
         margin-bottom: 10px;
     }
-
     .recruit_ul li .recruit_list_wrapper .recruit_state {
         width: 86px;
         height: 35px;
         bottom: 15px;
     }
-     
     .recruit_ul li .recruit_list_wrapper .recruit_state .recruit_state_wrapper {
         margin-bottom: 5px;
     }
-
     .recruit_ul li .recruit_list_wrapper .recruit_state .recruit_state_wrapper span {
         font-size: 11px;
     }
-
     .recruit_ul li .recruit_list_wrapper .recruit_state .state_box {
         width: 100%;
         height: 100%;
@@ -1074,70 +1143,124 @@ a {
     .recruit_ul li .recruit_list_wrapper .recruit_state .state_box span {
         font-size: 10px;
     }
-
-    .recruit_ul li .recruit_list_wrapper .recruit_state .state_box .recruit_arrow img{
+    .recruit_ul li .recruit_list_wrapper .recruit_state .state_box .recruit_arrow img {
         content: url('../../common/images/mobile_arrow.png');
     }
-
     .recruit_ul li .date .age {
         margin-top: 10px;
     }
-
     .recruit_ul li .recruit_info {
         height: 122px;
     }
-
-    .recruit_ul li .recruit_info .tag_list .tag{
+    .recruit_ul li .recruit_info .tag_list .tag {
         font-size: 10px;
     }
-
     .recruit_ul li .recruit_info .date {
         position: absolute;
         bottom: 12px;
     }
-
+    /* step */
+    .left_notice {
+        margin: 0;
+        border: none;
+        margin-bottom: 20px;
+    }
+    .step_wrapper .step_title {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .step_wrapper .step_title img {
+        content: url('../../common/images/application_check.png');
+        margin: 0;
+    }
+    .step_wrapper .step_title span {
+        width: initial;
+        font-size: 16px;
+    }
+    .step_wrapper .step_title span::after {
+        content: none;
+    }
+    .step_wrapper .step {
+        border: 1px solid #BEBEBE;
+    }
+    .step .item {
+        padding: 20px 0;
+    }
+    .item img {
+        margin: 0 auto 10px;
+    }
+    .item:nth-child(1) img {
+        content: url('../../common/images/mo_main_sign_in.png');
+    }
+    .item:nth-child(2) img {
+        content: url('../../common/images/mo_main_analytic.png');
+    }
+    .item:nth-child(3) img {
+        content: url('../../common/images/mo_main_statistics.png');
+    }
+    .item:nth-child(4) img {
+        content: url('../../common/images/mo_main_stethoscope.png');
+    }
+    .item:nth-child(5) img {
+        content: url('../../common/images/mo_main_call.png');
+    }
+    .item:nth-child(6) img {
+        content: url('../../common/images/mo_main_vaccine.png');
+    }
+    .item:nth-child(7) img {
+        content: url('../../common/images/mo_main_banknotes.png');
+    }
+    .item:nth-child(8) img {
+        content: url('../../common/images/mo_main_healthcare.png');
+    }
+    .item .num>span {
+        font-size: 12px;
+    }
     /* notice */
+    .right_notice .faq,
+    .right_notice .main_notice_wrapper {
+        margin-bottom: 20px;
+    }
+    .right_notice .faq {
+        height: inherit;
+    }
     .notice_wrapper {
         max-width: 100%;
         margin: 0 auto;
         border: none;
         display: block;
         padding: 20px;
-
     }
-
+    .notice_wrapper * {
+        box-sizing: border-box;
+    }
     .main_notice_title,
-    .notice_list_wrapper .notice_list_title {
+    .right_notice .notice_list_title {
         display: block;
-        margin-bottom: 10px;
     }
     .main_notice_title span,
-    .notice_list_wrapper .notice_list_title span {
+    .right_notice .notice_list_title span {
         display: block;
         font-size: 16px;
         text-align: center;
         color: #0C1E46;
     }
-
     .main_notice_card {
         margin: 0;
     }
-
     .notice_img {
         display: none;
     }
-
     .main_notice_wrapper {
         margin-bottom: 20px;
     }
-
     .main_notice_wrapper .notice_info {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 11px;
     }
-
     .main_notice_wrapper .notice_info .notice_title {
         font-size: 10px;
         height: 18px;
@@ -1145,262 +1268,230 @@ a {
         padding-left: 25px;
         margin: 0 24px 0 0;
     }
-
     .main_notice_wrapper .notice_info .notice_title:before {
         content: url('../../common/images/mobile_notice.png');
         height: 18px;
     }
-
     .main_notice_wrapper .notice_info .notice_date {
         font-size: 10px;
         white-space: nowrap;
     }
-
     .main_notice_card {
         display: block;
         /* border: none; */
         border-bottom: none;
         border-top: none;
     }
-
     .main_notice_wrapper .main_notice_card {
         height: 40px;
     }
-
     .main_notice_wrapper .main_notice_card.main {
         border-top: 1px solid #BEBEBE;
     }
-
     .main_notice_wrapper .main_notice_card:last-of-type {
         border-bottom: 1px solid #BEBEBE;
     }
-
-    .notice_list_wrapper {
+    .right_notice {
         max-width: 100%;
         display: block;
         margin-bottom: 40px;
     }
-
-    .notice_list_wrapper .notice_list {
+    .right_notice .notice_list {
         margin-bottom: 20px;
     }
-    
-    .notice_list_wrapper .notice_list_title {
-        display: block;
+    .right_notice .notice_list_title {
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+        border: none;
+        height: 40px;
     }
-
     .notice_list .notice_ul {
-        height: 120px;
+        height: 124px;
     }
-
     .notice_list .notice_ul li {
         border: none;
         padding: 11px;
     }
-
     .notice_list .notice_ul li span {
         font-size: 10px;
         padding-left: 25px;
     }
-
     .notice_list .notice_ul li span::before {
         content: url('../../common/images/mobile_question-circle.png');
     }
-
     .notice_list .notice_ul li img {
         display: none;
     }
-
-
-
     /* notice list */
-    .notice_list_wrapper .customer_center {
+    .right_notice .customer_center {
         width: inherit;
         padding: 15px;
         height: 150px;
+        width: 100%;
     }
-
     .customer_center::before {
         content: url('../../common/images/mbile_phonecall.png');
         right: 0;
         left: inherit;
     }
-
     .customer_center_info {
         margin: 0 0 15px 0;
     }
-
     .customer_center_info .center_title {
         font-size: 13px;
     }
-
     .customer_center_info .center_tel {
         font-size: 14px;
     }
-
     .customer_center_info .tel {
         font-size: 10px;
         margin-left: 5px;
     }
-
     .customer_center_box {
         position: inherit;
         right: inherit;
         bottom: inherit;
         transform: inherit;
-
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
-    .customer_center_info .center_time, 
+    .customer_center_info .center_time,
     .customer_center_info .center_break_time {
         font-size: 10px;
     }
-
     .customer_center_box .center_route {
         margin: 0;
     }
-
-    .customer_center_box > div {
+    .customer_center_box>div {
         width: 100%;
     }
-
-    .customer_center_box > div span {
+    .customer_center_box>div span {
         height: 30px;
         line-height: 30px;
         width: 100%;
     }
-
     /* swiper */
     .hospital_swiper_wrapper {
         display: none;
     }
-
-
     /* tab2 */
-
     .disease_check {
         max-width: 89%;
     }
-
     .disease_check .check_title span {
         font-size: 13px;
     }
-    .disease_check .check_title img{
+    .disease_check .check_title img {
         vertical-align: middle;
     }
-
     .check_list_info {
         display: block;
         height: inherit;
     }
-
     .check_list_info .chk_item_title {
         width: inherit;
         margin: 10px 0;
     }
-
     .check_ul li {
         margin: 0 15px;
     }
-
     .chk_item {
         justify-content: left;
         margin-bottom: 10px;
         flex-wrap: wrap;
     }
-
     .chk_item .item {
         margin-right: 10px;
     }
-
     .check_list_info .chk_item_title span,
     .chk_item .item label {
         font-size: 12px;
     }
-
     .check_button {
         padding: 20px 15px;
     }
-
     .check_button button {
         height: 40px;
         line-height: 40px;
         font-size: 13px;
     }
-
     .disease_selected {
         /* width: 89%; */
         margin: 20px auto 0;
         padding-bottom: 20px;
         border-bottom: 1px solid #BEBEBE;
     }
-
     .disease_selected_all {
         display: none;
     }
-
     .recruit_ul li .recruit_title_wrapper {
         display: flex;
         align-items: center;
     }
-
     .recruit_ul li .recruit_title_wrapper .recruit_title {
         font-size: 12px;
     }
-
     .recruit_ul li .recruit_title_wrapper .recruit_category {
         font-size: 11px;
         margin-right: 6px;
         height: 21px;
         line-height: 21px;
     }
-
     .recruit_ul li .healthy_hospital span,
     .recruit_ul li .date,
     .disease_selected .recruit_ul li .date .age {
         font-size: 11px;
     }
-
     .disease_selected .recruit_ul li .date .tag {
         display: none;
     }
-
-
     .recruit_ul li .recruit_list_wrapper .recruit_state .state_box .recruit_arrow {
         margin-left: 15px;
     }
-
     .view_more {
         display: none;
     }
-    
-
+    .left_notice {
+        width: 100%;
+    }
+    .notice_list_title>img {
+        display: none;
+    }
+    .notice_list .notice_ul li {
+        height: initial;
+        padding: 12px;
+    }
+    .healthy_card_wrapper .healthy_ul,
+    .total_recruit,
+    .total_recruit_wrapper {
+        max-width: 100%;
+    }
+    .step_title img {
+        margin-right: 5px !important;
+    }
+    .research_wrapper {
+        display: none !important;
+    }
 }
 
 
-
 /* 반응형 360 */
-@media ( max-width: 360px )  {
 
+@media ( max-width: 360px) {
     .research {
         margin-top: 45px;
     }
-
     .healthy_card_wrapper {
         max-width: 320px;
     }
-
     .healthy_card_wrapper .healthy_ul {
         max-width: 320px;
     }
-
     .swiper-container .swiper-wrapper .swiper-slide img {
         height: 200px;
     }
-
     .healthy_ul li .healthy_title_wrapper .healthy_title {
         display: inline-block;
         font-size: 15px;
@@ -1409,48 +1500,37 @@ a {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-
-    .healthy_img img{
+    .healthy_img img {
         width: 100%;
     }
-
     .healthy_ul li .healthy_hospital span {
         font-size: 12px;
     }
-
     .healthy_ul li .healthy_hospital {
         padding-bottom: 30px;
     }
-
     .healthy_ul li .healthy_hospital:after {
         width: 320px;
     }
-
     .healthy_ul li .date_wrapper .date {
         font-size: 12px;
     }
-
     .healthy_ul li .date_wrapper .due_date_wrapper span {
         font-size: 13px;
     }
-
     .healthy_ul li .healthy_recruit .recruit {
         font-size: 16px;
     }
-    
     .total_recruit_wrapper {
         margin-bottom: 0px;
         max-width: initial;
     }
-
     .total_recruit {
         max-width: 320px;
     }
-
     .total_recruit_wrapper .recruit_ul li {
         margin-bottom: 10px;
     }
-
     .recruit_ul li .recruit_title_wrapper .recruit_title {
         display: inline-block;
         width: 217px;
@@ -1459,34 +1539,22 @@ a {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-
     .recruit_ul li .healthy_hospital span,
     .recruit_ul li .date,
     .recruit_ul li .date .age {
         font-size: 11px;
     }
-
-    .recruit_ul li .healthy_hospital {
-    }
-
+    .recruit_ul li .healthy_hospital {}
     .notice_wrapper {
         max-width: 320px;
         padding: 20px;
     }
-
-    .notice_list_wrapper {
+    .right_notice {
         margin-bottom: 20px;
     }
-
     .customer_center_info .center_tel {
         margin-bottom: 15px;
     }
-
-    .notice_list_wrapper .customer_center {
-        height: 130px;
-    }
-
-
     /* tab2 */
     .disease_check,
     .disease_selected {

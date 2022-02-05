@@ -227,7 +227,7 @@ a {
 
 /* 반응형 425 */
 
-@media ( max-width: 425px) {
+@media ( max-width: 768px) {
     /* clinical */
     .join_protect_title {
         max-width: 89%;
@@ -250,13 +250,17 @@ a {
     }
     .navTwo__container__recruitment {
         font-size: 11px;
+        width: 50%;
     }
     .navTwo__container__list {
         font-size: 11px;
+        width: 50%;
+        box-sizing: border-box;
     }
     .navTwo__container__list img {
         width: 8px;
         height: 5px;
+        box-sizing: border-box;
     }
     .navTwo__li {
         top: 35px;
@@ -294,6 +298,9 @@ a {
     }
     .definition {
         margin-bottom: 20px;
+    }
+    .definition * {
+        font-size: 14px !important;
     }
     .definition p {
         font-size: 13px;
@@ -352,7 +359,7 @@ a {
 
 @media ( max-width: 360px) {
     .join_protect_title {
-        max-width: 320px;
+        max-width: 89%;
     }
     /* clinical definition */
     .join_cost_wrapper {
@@ -366,7 +373,15 @@ a {
     .participant_right_wrapper,
     .join_cost_wrapper,
     .from {
-        max-width: 340px;
+        max-width: 89%;
     }
-    .participant_right_wrapper {}
+    .definition * {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .mo_step {
+        width: 50%;
+    }
 }

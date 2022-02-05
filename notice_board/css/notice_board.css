@@ -5,7 +5,7 @@
 
 /* 반응형 425 */
 
-@media ( max-width: 425px) {
+@media ( max-width: 430px) {
     .research {
         padding: 0 20px;
     }
@@ -457,7 +457,7 @@
 
 /* 반응형 425 */
 
-@media ( max-width: 425px) {
+@media ( max-width: 430px) {
     .mobile__board__bottom>span {
         padding-left: 10px;
     }

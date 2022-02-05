@@ -1,6 +1,6 @@
 /* 반응형 425 */
 
-@media ( max-width: 425px) {
+@media ( max-width: 430px) {
     .research {
         padding: 0 20px;
     }
@@ -131,7 +131,7 @@
 
 /* navTwo 반응형 425 */
 
-@media ( max-width: 425px) {}
+@media ( max-width: 430px) {}
 
 
 /* navTwo 반응형 360 */
@@ -203,7 +203,6 @@
 
 .notice__table table tr>* :last-child {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -352,7 +351,7 @@
 
 /* 반응형 425 */
 
-@media ( max-width: 425px) {
+@media ( max-width: 430px) {
     .notice__container {
         width: 100%;
     }

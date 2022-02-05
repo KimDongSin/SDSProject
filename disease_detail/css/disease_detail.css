@@ -1,5 +1,3 @@
-
-
 /*navTwo*/
 
 .navTwo {
@@ -371,7 +369,7 @@
 
 /* 반응형 425 */
 
-@media ( max-width: 425px) {
+@media ( max-width: 430px) {
     /* 네비바2 */
     .navTwo__container {
         width: 100%;
@@ -576,7 +574,7 @@
         font-size: 11px;
         padding: 5px 10px;
     }
-    .download_wrapper img {
+    .download_wrapper a img {
         width: 15px;
         height: 15px;
         margin-right: 5px;

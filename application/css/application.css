@@ -590,7 +590,7 @@ a {
 
 
 /* 반응형 425 */
-@media ( max-width: 425px )  {
+@media ( max-width: 430px )  {
      /* 네비바2 */
 
      .navTwo__container{
@@ -642,6 +642,7 @@ a {
 
 
     .research {
+        width: 89%;
         padding: 0 20px;
         margin: 20px auto;
     }
@@ -661,7 +662,7 @@ a {
     }
 
     .my_application_wrapper {
-        max-width: 385px;
+        max-width: 89%;
         padding: 0;
         margin: 0 auto;
     }
@@ -716,7 +717,7 @@ a {
 
     /* application_wrapper */
     .application_wrapper {
-        max-width: 89%;
+        /* max-width: 89%; */
         margin: 20px auto;
 
     }
@@ -787,7 +788,7 @@ a {
     }
 
     .my_application_wrapper {
-        max-width: 320px;
+        max-width: 89%;
     }
 
     .my_application_wrapper .healthy_ul {

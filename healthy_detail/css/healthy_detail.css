@@ -1,7 +1,7 @@
 /*  */
 
 * {
-    font-family: 'Noto Sans  KR';
+    font-family: 'Noto Sans KR';
 }
 
 a {
@@ -377,7 +377,7 @@ a {
 
 /* 반응형 425 */
 
-@media ( max-width: 425px) {
+@media ( max-width: 430px) {
     /* 네비바2 */
     .navTwo__container {
         width: 100%;
@@ -414,6 +414,28 @@ a {
     }
     .navTwo__container .navTwo__container__recruitment {
         border-right: 1px solid #BEBEBE;
+    }
+    /* total recruit */
+    .heathy_volunteer_title {
+        max-width: 89%;
+        margin: 20px auto;
+    }
+    .heathy_volunteer_title span {
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+    .volunteer_btn_wrapper {
+        max-width: 89%;
+    }
+    .volunteer_btn_wrapper>div {
+        margin-right: 10px;
+    }
+    .volunteer_btn_wrapper>div button {
+        font-size: 14px;
+    }
+    .no_result span {
+        font-size: 13px;
     }
     /* total recruit */
     .heathy_volunteer_title {
@@ -525,6 +547,9 @@ a {
     .healthy_detail .hospital_title_wrapper {
         margin-top: 10px;
         margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .healthy_detail .healthy_hospital {
         margin-bottom: 10px;
@@ -533,7 +558,6 @@ a {
         margin-top: 10px;
     }
     .healthy_detail .date .age::before {
-        left: 100px;
     }
     .apply_button {
         margin: 25px 25px 15px;
@@ -580,6 +604,34 @@ a {
         width: 100%;
         white-space: nowrap;
     }
+    .healthy_detail {
+        border-top: none;
+    }
+    .healthy_detail .healthy_hospital {
+        margin-bottom: 10px
+    }
+    .hospital_category {
+        font-size: 11px !important;
+    }
+    .hospital_title {
+        font-size: 13px !important;
+    }
+    .healthy_detail .date span {
+        font-size: 11px !important;
+    }
+    .healthy_detail .date .age {
+        display: inline-block;
+        font-size: 11px !important;
+    }
+    .healthy_detail .hospital_title_wrapper .hospital_category {
+        margin-right: 7px !important;
+    }
+    .healthy_detail {
+        border-top: none !important;
+    }
+    .hospital_info * {
+        box-sizing: border-box;
+    }
 }
 
 
@@ -587,7 +639,7 @@ a {
 
 @media ( max-width: 360px) {
     .healthy_detail_wrapper {
-        max-width: 320px;
+        max-width: 89%;
         margin-bottom: 0px;
     }
     .heathy_volunteer_title {
@@ -609,8 +661,5 @@ a {
     .healthy_detail .date,
     .healthy_detail .date .age {
         font-size: 11px;
-    }
-    .healthy_detail .healthy_hospital {
-        margin-bottom: 20px
     }
 }

@@ -1,6 +1,6 @@
 /* 반응형 425 */
 
-@media ( max-width: 425px) {
+@media ( max-width: 430px) {
     .research {
         padding: 0 20px;
     }
@@ -360,23 +360,29 @@
 
 .faq__box__bottom {
     display: none;
-    align-items: center;
-    height: 225px;
+    align-items: baseline;
+    height: auto;
     background-color: #F5F7FB;
     padding: 25px 0;
     position: relative;
 }
 
 .faq__box__bottom>img {
+    position: absolute;
     padding-left: 25px;
-    margin-bottom: 140px;
+    top: 26px;
 }
 
 .box__bottom__text {
     font-size: 17px;
-    line-height: 25px;
+    line-height: 30px;
     margin-left: 50px;
+    padding-left: 50px;
     font-weight: 500;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    width: 100%;
 }
 
 .show {
@@ -390,7 +396,7 @@
 
 /* 반응형 425 */
 
-@media ( max-width: 425px) {
+@media ( max-width: 430px) {
     .notice__container {
         width: 100%;
     }
@@ -521,12 +527,12 @@
         font-size: 9px;
         line-height: 13px;
         margin-left: 22px;
+        padding-left: initial;
     }
     .faq__box__bottom>img {
         width: 12px;
         height: 12px;
         padding: 0;
-        margin-bottom: 90px;
         position: absolute;
         top: 10px;
         left: 5px;
@@ -547,7 +553,6 @@
         width: 12px;
         height: 12px;
         padding: 0;
-        margin-bottom: 117px;
     }
 }
 

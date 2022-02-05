@@ -229,9 +229,9 @@ a {
 }
 
 
-/* 반응형 425 */
+/* 반응형 768 */
 
-@media ( max-width: 425px) {
+@media ( max-width: 768px) {
     /* clinical */
     .clinical_title {
         max-width: 89%;
@@ -254,9 +254,11 @@ a {
     }
     .navTwo__container__recruitment {
         font-size: 11px;
+        width: 50%;
     }
     .navTwo__container__list {
         font-size: 11px;
+        width: 50%;
     }
     .navTwo__container__list img {
         width: 8px;
@@ -329,28 +331,4 @@ a {
     .from span {
         font-size: 13px;
     }
-}
-
-
-/* 반응형 360 */
-
-@media ( max-width: 360px) {
-    .clinical_title {
-        max-width: 320px;
-    }
-    /* clinical definition */
-    .clinical_definition_wrapper {
-        max-width: 320px;
-    }
-    /* schedule */
-    .clinical_schedule_wrapper {
-        max-width: 320px;
-    }
-    /* clinical  */
-    .participant_right_wrapper,
-    .clinical_definition_wrapper,
-    .from {
-        max-width: 340px;
-    }
-    .participant_right_wrapper {}
 }
